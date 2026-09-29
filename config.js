@@ -30,9 +30,11 @@
 
 const TIMELINE = [
   { photo: 1,  at: "0.00", text: "Auguri Papà!" },
-  { photo: 2,  at: "0.08", text: ""},
-  { photo: 6,  at: "0.16", text: "" },
-  { photo: 3,  at: "0.23", text: "" },
+  { photo: 30, at: "0.05", text: ""},
+  { photo: 29, at: "0.10", text: ""},
+  { photo: 2,  at: "0.15", text: ""},
+  { photo: 6,  at: "0.20", text: "" },
+  { photo: 3,  at: "0.28", text: "" },
   { photo: 4,  at: "0.33", text: "Ma la vita l'hai insegnata tu" },
   { photo: 5,  at: "0.37", text: "Ogni giorno un po' di più" },
   { photo: 7,  at: "0.40", text: "Con quegli occhi innamorati tuoi" },
@@ -55,7 +57,10 @@ const TIMELINE = [
   { photo: 24, at: "2.11", text: "" },
   { photo: 25, at: "2.13", text: "E ho capito la timida follia Del tuo essere unico perché " },
   { photo: 26, at: "2.21", text: "Sei la meta del mio viaggio per me E così .... Sempre di più Somiglio a te Nei tuoi sorrisi E nelle lacrime" },
-  { photo: 27, at: "2.50", text: "E ho imparato ad amare e credere Nella vita rischiando tutta me E ho diviso questo viaggio con te Io con te" }
+  { photo: 28,  at: "2.31", text: ""},
+  { photo: 32,  at: "2.41", text: ""},
+  { photo: 27, at: "2.50", text: "E ho imparato ad amare e credere Nella vita rischiando tutta me E ho diviso questo viaggio con te Io con te" },
+  { photo: 31,  at: "3.10", text: ""}
 ];
 
 // Percorso del file mp3 in audio/. Lascialo vuoto ("") per provare
