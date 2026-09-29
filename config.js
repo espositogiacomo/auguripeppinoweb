@@ -45,21 +45,24 @@ const TIMELINE = [
   { photo: 12, at: "1.02", text: "" },
   { photo: 13, at: "1.07", text: "" },
   { photo: 14, at: "1.10", text: "Ho imparato il mio coraggio" },
-  { photo: 16, at: "1.14", text: "" },
-  { photo: 17, at: "1.17", text: "E ho diviso la strada e l'allegria" },
+  { photo: 16, at: "1.13", text: "" },
+  { photo: 17, at: "1.15", text: "E ho diviso la strada e l'allegria" },
   { photo: 19, at: "1.20", text: "La tua forza la tua malinconia" },
   { photo: 15, at: "1.30", text: "" },
   { photo: 32, at: "1.40", text: ""},  
-  { photo: 20, at: "1.49", text: "Cosa non farei per ridarti il tempo perso ormai" },
+  { photo: 20, at: "1.48", text: "Cosa non farei per ridarti il tempo perso ormai" },
   { photo: 21, at: "1.58", text: "Ho imparato ad amare come te" },
-  { photo: 22, at: "2.02", text: "Questa vita rischiando tutta me Ho imparato il tuo coraggio" },
-  { photo: 23, at: "2.09", text: "" },
-  { photo: 24, at: "2.11", text: "" },
+  { photo: 22, at: "2.02", text: "Questa vita rischiando tutta me" },
+  { photo: 23, at: "2.04", text: "Ho imparato il tuo coraggio" },
+  { photo: 34, at: "2.06", text: "" },
+  { photo: 35, at: "2.08", text: "" },
+  { photo: 24, at: "2.10", text: "" },
   { photo: 25, at: "2.13", text: "E ho capito la timida follia Del tuo essere unico perché " },
-  { photo: 26, at: "2.21", text: "Sei la meta del mio viaggio per me E così .... Sempre di più Somiglio a te Nei tuoi sorrisi E nelle lacrime" },
-  { photo: 28,  at: "2.31", text: ""},
+  { photo: 26, at: "2.21", text: "Sei la meta del mio viaggio per me E così .... Sempre di più " },
+  { photo: 28,  at: "2.31", text: "Somiglio a te Nei tuoi sorrisi E nelle lacrime"},
   { photo: 27, at: "2.50", text: "E ho imparato ad amare e credere Nella vita rischiando tutta me E ho diviso questo viaggio con te Io con te" },
-  { photo: 31,  at: "3.10", text: ""}
+  { photo: 33,  at: "3.00", text: ""},
+  { photo: 31,  at: "3.10", text: "Ti voglio bene Papà!"}
 ];
 
 // Percorso del file mp3 in audio/. Lascialo vuoto ("") per provare
