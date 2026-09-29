@@ -27,11 +27,13 @@ function nextSlide() {
 function start() {
   overlay.classList.add("hidden");
 
-  audio.src = AUDIO_FILE;
-  audio.play().catch(() => {
-    // Se il browser blocca comunque la riproduzione automatica,
-    // l'utente puo' comunque vedere lo slideshow senza audio.
-  });
+  if (AUDIO_FILE) {
+    audio.src = AUDIO_FILE;
+    audio.play().catch(() => {
+      // Se il browser blocca comunque la riproduzione automatica,
+      // l'utente puo' comunque vedere lo slideshow senza audio.
+    });
+  }
 
   setInterval(nextSlide, SLIDE_INTERVAL_MS);
 }
