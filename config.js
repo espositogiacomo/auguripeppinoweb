@@ -1,40 +1,62 @@
-// Configurazione: modifica solo questo file per cambiare foto e audio.
-// Metti le foto nella cartella "photos" e l'mp3 nella cartella "audio".
+// ==========================================================
+// CONFIGURAZIONE TIMELINE — foto, testo e tempi (in secondi)
+// ==========================================================
+//
+// La TIMELINE e' l'elenco di "step" mostrati in sequenza, uno dopo
+// l'altro, nell'ordine in cui li scrivi qui sotto. Ogni step ha una
+// sua "duration" (pausa in secondi, anche con decimali, es. 3.5)
+// che puoi modificare per sincronizzare lo slideshow con la musica.
+//
+// Due tipi di step:
+//
+//  1) FOTO:
+//     { photo: 5, duration: 4 }
+//     Mostra "photos/foto-05.jpg" per 4 secondi.
+//     Il numero "photo" corrisponde al nome file foto-NN.jpg.
+//
+//  2) TESTO:
+//     { text: "Tanti auguri Peppino!", duration: 3 }
+//     Mostra una schermata con sfondo scuro e scritta color oro
+//     per 3 secondi. Puoi inserirne quante ne vuoi, in qualsiasi
+//     punto della timeline, anche una dopo l'altra.
+//
+// Esempio con un testo inserito tra due foto:
+//   { photo: 12, duration: 4 },
+//   { text: "40 anni di sorrisi", duration: 3 },
+//   { photo: 13, duration: 4 },
 
-const PHOTOS = [
-  "photos/foto-01.jpg",
-  "photos/foto-02.jpg",
-  "photos/foto-03.jpg",
-  "photos/foto-04.jpg",
-  "photos/foto-05.jpg",
-  "photos/foto-06.jpg",
-  "photos/foto-07.jpg",
-  "photos/foto-08.jpg",
-  "photos/foto-09.jpg",
-  "photos/foto-10.jpg",
-  "photos/foto-11.jpg",
-  "photos/foto-12.jpg",
-  "photos/foto-13.jpg",
-  "photos/foto-14.jpg",
-  "photos/foto-15.jpg",
-  "photos/foto-16.jpg",
-  "photos/foto-17.jpg",
-  "photos/foto-18.jpg",
-  "photos/foto-19.jpg",
-  "photos/foto-20.jpg",
-  "photos/foto-21.jpg",
-  "photos/foto-22.jpg",
-  "photos/foto-23.jpg",
-  "photos/foto-24.jpg",
-  "photos/foto-25.jpg",
-  "photos/foto-26.jpg",
-  "photos/foto-27.jpg",
-  "photos/foto-28.jpg"
+const TIMELINE = [
+  { photo: 1,  duration: 5 },
+  { photo: 2,  duration: 5 },
+  { photo: 3,  duration: 5 },
+  { photo: 4,  duration: 5 },
+  { photo: 5,  duration: 5 },
+  { photo: 6,  duration: 5 },
+  { photo: 7,  duration: 5 },
+  { photo: 8,  duration: 5 },
+  { photo: 9,  duration: 5 },
+  { photo: 10, duration: 5 },
+  { photo: 11, duration: 5 },
+  { photo: 12, duration: 5 },
+  { photo: 13, duration: 5 },
+  { photo: 14, duration: 5 },
+  { photo: 15, duration: 5 },
+  { photo: 16, duration: 5 },
+  { photo: 17, duration: 5 },
+  { photo: 18, duration: 5 },
+  { photo: 19, duration: 5 },
+  { photo: 20, duration: 5 },
+  { photo: 21, duration: 5 },
+  { photo: 22, duration: 5 },
+  { photo: 23, duration: 5 },
+  { photo: 24, duration: 5 },
+  { photo: 25, duration: 5 },
+  { photo: 26, duration: 5 },
+  { photo: 27, duration: 5 },
+  { photo: 28, duration: 5 }
 ];
 
-// Lascia vuoto ("") finché non carichi l'mp3 in audio/: la pagina funzionera'
-// comunque senza audio. Quando aggiungi il file, scrivi qui il percorso,
-// es. "audio/canzone.mp3".
+// Lascia vuoto ("") finché non carichi l'mp3 in audio/: la pagina
+// funziona comunque senza audio. Quando aggiungi il file, scrivi qui
+// il percorso, es. "audio/canzone.mp3".
 const AUDIO_FILE = "";
-
-const SLIDE_INTERVAL_MS = 5000;

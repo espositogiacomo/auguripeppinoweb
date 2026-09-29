@@ -3,25 +3,41 @@ const audio = document.getElementById("audio-player");
 const overlay = document.getElementById("start-overlay");
 const startButton = document.getElementById("start-button");
 
+const steps = [];
 let currentIndex = 0;
-const imgElements = [];
 
-function buildSlides() {
-  PHOTOS.forEach((src, i) => {
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = `Foto ${i + 1}`;
-    if (i === 0) img.classList.add("active");
-    slideshow.appendChild(img);
-    imgElements.push(img);
+function pad(n) {
+  return String(n).padStart(2, "0");
+}
+
+function buildSteps() {
+  TIMELINE.forEach((item, i) => {
+    let el;
+
+    if (item.photo !== undefined) {
+      el = document.createElement("img");
+      el.src = `photos/foto-${pad(item.photo)}.jpg`;
+      el.alt = `Foto ${item.photo}`;
+      el.className = "slide photo-slide";
+    } else if (item.text !== undefined) {
+      el = document.createElement("div");
+      el.className = "slide text-slide";
+      el.textContent = item.text;
+    }
+
+    if (i === 0) el.classList.add("active");
+    slideshow.appendChild(el);
+    steps.push({ el, duration: (item.duration || 5) * 1000 });
   });
 }
 
-function nextSlide() {
-  if (imgElements.length < 2) return;
-  imgElements[currentIndex].classList.remove("active");
-  currentIndex = (currentIndex + 1) % imgElements.length;
-  imgElements[currentIndex].classList.add("active");
+function showNext() {
+  const current = steps[currentIndex];
+  current.el.classList.remove("active");
+  currentIndex = (currentIndex + 1) % steps.length;
+  const next = steps[currentIndex];
+  next.el.classList.add("active");
+  setTimeout(showNext, next.duration);
 }
 
 function start() {
@@ -35,8 +51,10 @@ function start() {
     });
   }
 
-  setInterval(nextSlide, SLIDE_INTERVAL_MS);
+  if (steps.length > 1) {
+    setTimeout(showNext, steps[currentIndex].duration);
+  }
 }
 
-buildSlides();
+buildSteps();
 startButton.addEventListener("click", start, { once: true });

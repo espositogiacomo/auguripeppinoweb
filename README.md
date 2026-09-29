@@ -1,14 +1,17 @@
 # Pagina auguri con foto e musica
 
-Pagina web statica: mostra una serie di foto a scorrimento automatico (ogni 5 secondi) con una canzone mp3 in sottofondo. Pensata per essere aperta tramite QR code, ad esempio da smartphone.
+Pagina web statica: mostra una serie di foto a scorrimento automatico, con testi personalizzati (sfondo scuro, scritta color oro) intervallati alle foto, e una canzone mp3 in sottofondo. Pensata per essere aperta tramite QR code, ad esempio da smartphone.
 
-## 1. Aggiungere le foto e l'audio
+## 1. Aggiungere/modificare foto, testi, tempi e audio
 
-1. Copia le tue foto nella cartella [photos/](photos) (formati jpg/png). Rinominale come preferisci.
-2. Copia il file audio mp3 nella cartella [audio/](audio).
-3. Apri [config.js](config.js) e aggiorna:
-   - l'elenco `PHOTOS` con i percorsi dei file che hai copiato (es. `"photos/nome-foto.jpg"`);
-   - `AUDIO_FILE` con il percorso del tuo mp3 (es. `"audio/nome-canzone.mp3"`).
+Tutto si gestisce da un unico file: [config.js](config.js).
+
+- Le foto vanno nella cartella [photos/](photos), con nome `foto-01.jpg`, `foto-02.jpg`, ecc.
+- Il file audio mp3 va nella cartella [audio/](audio).
+- In `config.js` trovi la `TIMELINE`: l'elenco degli step mostrati in sequenza, ciascuno con la propria `duration` (pausa in secondi, anche con decimali) — usa queste durate per sincronizzare le foto con la musica.
+  - Uno step foto: `{ photo: 5, duration: 4 }` → mostra `photos/foto-05.jpg` per 4 secondi.
+  - Uno step testo: `{ text: "Tanti auguri!", duration: 3 }` → mostra una schermata con sfondo scuro e scritta color oro per 3 secondi. Puoi inserirne quante vuoi, in qualsiasi punto della timeline.
+- `AUDIO_FILE`: percorso del tuo mp3 (es. `"audio/nome-canzone.mp3"`). Lascialo vuoto (`""`) se non hai ancora il file.
 
 Non serve toccare nessun altro file.
 
@@ -42,5 +45,5 @@ Usa un generatore gratuito online (es. cerca "QR code generator" sul tuo motore 
 ## Note
 
 - Le foto vengono mostrate mantenendo le proporzioni (senza deformarle) su sfondo nero.
-- Lo slideshow è in loop continuo, così come l'audio.
-- Per cambiare la velocità di scorrimento, modifica `SLIDE_INTERVAL_MS` in [config.js](config.js) (valore in millisecondi, 5000 = 5 secondi).
+- Lo slideshow (foto + testi) è in loop continuo, così come l'audio.
+- Ogni step della `TIMELINE` in [config.js](config.js) ha la sua durata: modificale singolarmente per sincronizzare con la musica.
