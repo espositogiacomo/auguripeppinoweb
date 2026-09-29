@@ -59,4 +59,4 @@ const TIMELINE = [
 // Lascia vuoto ("") finché non carichi l'mp3 in audio/: la pagina
 // funziona comunque senza audio. Quando aggiungi il file, scrivi qui
 // il percorso, es. "audio/canzone.mp3".
-const AUDIO_FILE = "";
+const AUDIO_FILE = "audio/viaggio-con-te.mp3";
