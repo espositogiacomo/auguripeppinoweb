@@ -6,7 +6,8 @@
 
 html, body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  height: 100dvh;
   background: #000;
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -16,6 +17,7 @@ html, body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
 }
 
 #slideshow .slide {
@@ -34,20 +36,8 @@ html, body {
 
 #slideshow img.photo-slide {
   object-fit: contain;
+  object-position: center top;
   background: #000;
-}
-
-#slideshow .text-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8%;
-  background: #000;
-  color: #d4af37;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2rem;
-  line-height: 1.5;
-  text-align: center;
 }
 
 #start-overlay {
@@ -80,4 +70,67 @@ html, body {
   0%   { transform: scale(1); }
   50%  { transform: scale(1.06); }
   100% { transform: scale(1); }
+}
+
+/* Didascalia sotto la foto, con animazione "a fumo" */
+#caption {
+  position: fixed;
+  left: 50%;
+  bottom: 86px;
+  z-index: 5;
+  max-width: 88%;
+  padding: 0.55em 1.1em;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #d4af37;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#caption.visible {
+  animation: captionAppear 900ms ease-out forwards;
+}
+
+#caption.hiding {
+  animation: captionDisappear 700ms ease-in forwards;
+}
+
+@keyframes captionAppear {
+  0%   { opacity: 0; filter: blur(16px); transform: translateX(-50%) scale(0.8); }
+  60%  { opacity: 1; filter: blur(2px);  transform: translateX(-50%) scale(1.03); }
+  100% { opacity: 1; filter: blur(0);    transform: translateX(-50%) scale(1); }
+}
+
+@keyframes captionDisappear {
+  0%   { opacity: 1; filter: blur(0);    transform: translateX(-50%) scale(1)    translateY(0); }
+  100% { opacity: 0; filter: blur(16px); transform: translateX(-50%) scale(1.15) translateY(-14px); }
+}
+
+/* Tasto play/pausa */
+#play-pause-button {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 6;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #ffcc00;
+  font-size: 1.4rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#play-pause-button.hidden {
+  display: none;
 }

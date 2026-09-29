@@ -7,33 +7,29 @@
 // APPARIRE nella canzone. Esempi: "0.00" = inizio, "0.08" = 8 secondi,
 // "1.05" = 1 minuto e 5 secondi, "2.30" = 2 minuti e 30 secondi.
 //
-// Non serve calcolare le pause a mano: la durata di ogni step viene
-// calcolata automaticamente come differenza rispetto al successivo
-// (l'ultimo step dura fino alla fine della canzone, poi si ricomincia
+// Non serve calcolare le pause a mano: la durata di ogni foto viene
+// calcolata automaticamente come differenza rispetto alla successiva
+// (l'ultima foto dura fino alla fine della canzone, poi si ricomincia
 // in loop insieme alla musica).
 //
-// Gli step vanno scritti IN ORDINE crescente di tempo.
+// Le foto vanno scritte IN ORDINE crescente di tempo.
 //
-// Due tipi di step:
+// Ogni riga e' una foto:
+//   { photo: 5, at: "0.33" }
+//   Mostra "photos/foto-05.jpg" a partire dal secondo indicato.
+//   Il numero "photo" corrisponde al nome file foto-NN.jpg.
 //
-//  1) FOTO:
-//     { photo: 5, at: "0.33" }
-//     Mostra "photos/foto-05.jpg" a partire dal secondo indicato.
-//     Il numero "photo" corrisponde al nome file foto-NN.jpg.
+// Per aggiungere una didascalia sotto una foto, aggiungi semplicemente
+// "text": apparira' insieme alla foto (con un'animazione a effetto
+// fumo) e sparira' quando cambia la foto. Se non scrivi "text", quella
+// foto viene mostrata da sola, senza scritta.
 //
-//  2) TESTO:
-//     { text: "Tanti auguri Peppino!", at: "1.12" }
-//     Mostra una schermata con sfondo scuro e scritta color oro
-//     a partire dal secondo indicato. Puoi inserirne quante ne vuoi,
-//     in qualsiasi punto della timeline.
-//
-// Esempio con un testo inserito tra due foto:
 //   { photo: 12, at: "1.30" },
-//   { text: "40 anni di sorrisi", at: "1.38" },
-//   { photo: 13, at: "1.45" },
+//   { photo: 13, at: "1.38", text: "40 anni di sorrisi" },
+//   { photo: 14, at: "1.45" },
 
 const TIMELINE = [
-  { photo: 1,  at: "0.00" },
+  { photo: 1,  at: "0.00", text: "Tanti auguri Peppino!" },
   { photo: 2,  at: "0.08" },
   { photo: 3,  at: "0.17" },
   { photo: 4,  at: "0.25" },
