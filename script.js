@@ -4,6 +4,8 @@ const audio = document.getElementById("audio-player");
 const overlay = document.getElementById("start-overlay");
 const startButton = document.getElementById("start-button");
 const playPauseButton = document.getElementById("play-pause-button");
+const progressBar = document.getElementById("progress-bar");
+const progressFill = document.getElementById("progress-fill");
 
 const NO_AUDIO_TAIL_SECONDS = 5;
 
@@ -74,8 +76,44 @@ function tick() {
     updateCaption(steps[idx]);
   }
 
+  if (!isScrubbing) {
+    const ratio = Math.min(1, Math.max(0, t / loopDuration()));
+    progressFill.style.width = `${ratio * 100}%`;
+  }
+
   requestAnimationFrame(tick);
 }
+
+let isScrubbing = false;
+
+function seekToRatio(ratio) {
+  ratio = Math.min(1, Math.max(0, ratio));
+  progressFill.style.width = `${ratio * 100}%`;
+  const target = ratio * loopDuration();
+
+  if (AUDIO_FILE) {
+    audio.currentTime = target;
+  } else {
+    manualStart = Date.now() - target * 1000;
+    if (isPaused) pausedAt = Date.now();
+  }
+}
+
+function ratioFromEvent(e) {
+  const rect = progressBar.getBoundingClientRect();
+  return (e.clientX - rect.left) / rect.width;
+}
+
+progressBar.addEventListener("pointerdown", (e) => {
+  isScrubbing = true;
+  seekToRatio(ratioFromEvent(e));
+});
+progressBar.addEventListener("pointermove", (e) => {
+  if (isScrubbing) seekToRatio(ratioFromEvent(e));
+});
+window.addEventListener("pointerup", () => {
+  isScrubbing = false;
+});
 
 function togglePause() {
   if (isPaused) {
@@ -100,6 +138,7 @@ function togglePause() {
 function start() {
   overlay.classList.add("hidden");
   playPauseButton.classList.remove("hidden");
+  progressBar.classList.remove("hidden");
 
   if (steps[0].text) updateCaption(steps[0]);
 

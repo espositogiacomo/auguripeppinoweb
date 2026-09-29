@@ -76,7 +76,7 @@ html, body {
 #caption {
   position: fixed;
   left: 50%;
-  bottom: 86px;
+  bottom: 98px;
   z-index: 5;
   max-width: 88%;
   padding: 0.55em 1.1em;
@@ -114,7 +114,7 @@ html, body {
 #play-pause-button {
   position: fixed;
   left: 50%;
-  bottom: 20px;
+  bottom: 34px;
   transform: translateX(-50%);
   z-index: 6;
   width: 52px;
@@ -133,4 +133,53 @@ html, body {
 
 #play-pause-button.hidden {
   display: none;
+}
+
+/* Barra di avanzamento interattiva */
+#progress-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 7;
+  height: 26px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  touch-action: none;
+  cursor: pointer;
+}
+
+#progress-bar.hidden {
+  display: none;
+}
+
+#progress-track {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  border-radius: 3px;
+  background: #ffcc00;
+}
+
+#progress-fill::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffcc00;
+  transform: translateY(-50%);
 }

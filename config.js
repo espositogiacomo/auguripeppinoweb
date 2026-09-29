@@ -31,10 +31,10 @@
 const TIMELINE = [
   { photo: 1,  at: "0.00", text: "Auguri Papà!" },
   { photo: 2,  at: "0.08", text: ""},
-  { photo: 3,  at: "0.17", text: "" },
+  { photo: 6,  at: "0.16", text: "" },
+  { photo: 3,  at: "0.23", text: "" },
   { photo: 4,  at: "0.33", text: "Ma la vita l'hai insegnata tu" },
   { photo: 5,  at: "0.37", text: "Ogni giorno un po' di più" },
-  { photo: 6,  at: "0.39", text: "" },
   { photo: 7,  at: "0.40", text: "Con quegli occhi innamorati tuoi" },
   { photo: 8,  at: "0.45", text: "Di due figlie matte come noi" },
   { photo: 9,  at: "0.48", text: "" },
