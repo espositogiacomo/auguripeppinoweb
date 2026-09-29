@@ -8,9 +8,10 @@ Tutto si gestisce da un unico file: [config.js](config.js).
 
 - Le foto vanno nella cartella [photos/](photos), con nome `foto-01.jpg`, `foto-02.jpg`, ecc.
 - Il file audio mp3 va nella cartella [audio/](audio).
-- In `config.js` trovi la `TIMELINE`: l'elenco degli step mostrati in sequenza, ciascuno con la propria `duration` (pausa in secondi, anche con decimali) — usa queste durate per sincronizzare le foto con la musica.
-  - Uno step foto: `{ photo: 5, duration: 4 }` → mostra `photos/foto-05.jpg` per 4 secondi.
-  - Uno step testo: `{ text: "Tanti auguri!", duration: 3 }` → mostra una schermata con sfondo scuro e scritta color oro per 3 secondi. Puoi inserirne quante vuoi, in qualsiasi punto della timeline.
+- In `config.js` trovi la `TIMELINE`: l'elenco degli step mostrati in sequenza. Per ognuno scrivi `at`, il minuto e secondo della canzone in cui deve apparire (formato `"mm.ss"`, es. `"1.05"` = 1 minuto e 5 secondi). Le pause vengono calcolate automaticamente come differenza tra un `at` e il successivo — non serve fare i calcoli a mano.
+  - Uno step foto: `{ photo: 5, at: "0.33" }` → mostra `photos/foto-05.jpg` a partire dal secondo 33.
+  - Uno step testo: `{ text: "Tanti auguri!", at: "1.12" }` → mostra una schermata con sfondo scuro e scritta color oro a partire da quell'istante. Puoi inserirne quanti vuoi, in qualsiasi punto della timeline.
+  - Gli step vanno scritti in ordine crescente di tempo. L'ultimo dura fino alla fine della canzone, poi lo slideshow ricomincia in loop insieme alla musica.
 - `AUDIO_FILE`: percorso del tuo mp3 (es. `"audio/nome-canzone.mp3"`). Lascialo vuoto (`""`) se non hai ancora il file.
 
 Non serve toccare nessun altro file.
@@ -45,5 +46,5 @@ Usa un generatore gratuito online (es. cerca "QR code generator" sul tuo motore 
 ## Note
 
 - Le foto vengono mostrate mantenendo le proporzioni (senza deformarle) su sfondo nero.
-- Lo slideshow (foto + testi) è in loop continuo, così come l'audio.
-- Ogni step della `TIMELINE` in [config.js](config.js) ha la sua durata: modificale singolarmente per sincronizzare con la musica.
+- Lo slideshow (foto + testi) è sincronizzato sul tempo effettivo della canzone (non su timer separati), quindi resta in fase con l'audio anche dopo molti loop.
+- Per cambiare quando appare una foto o un testo, modifica il suo `at` in [config.js](config.js): la durata di visualizzazione si aggiorna da sola.

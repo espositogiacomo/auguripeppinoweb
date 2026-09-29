@@ -3,15 +3,23 @@ const audio = document.getElementById("audio-player");
 const overlay = document.getElementById("start-overlay");
 const startButton = document.getElementById("start-button");
 
+const NO_AUDIO_TAIL_SECONDS = 5;
+
 const steps = [];
 let currentIndex = 0;
+let manualStart = null;
 
 function pad(n) {
   return String(n).padStart(2, "0");
 }
 
+function parseAt(at) {
+  const [minutes, seconds] = String(at).split(".");
+  return (parseInt(minutes, 10) || 0) * 60 + (parseInt(seconds, 10) || 0);
+}
+
 function buildSteps() {
-  TIMELINE.forEach((item, i) => {
+  TIMELINE.forEach((item) => {
     let el;
 
     if (item.photo !== undefined) {
@@ -25,19 +33,37 @@ function buildSteps() {
       el.textContent = item.text;
     }
 
-    if (i === 0) el.classList.add("active");
     slideshow.appendChild(el);
-    steps.push({ el, duration: (item.duration || 5) * 1000 });
+    steps.push({ el, at: parseAt(item.at) });
   });
+  steps[0].el.classList.add("active");
 }
 
-function showNext() {
-  const current = steps[currentIndex];
-  current.el.classList.remove("active");
-  currentIndex = (currentIndex + 1) % steps.length;
-  const next = steps[currentIndex];
-  next.el.classList.add("active");
-  setTimeout(showNext, next.duration);
+function loopDuration() {
+  if (AUDIO_FILE && audio.duration) return audio.duration;
+  return steps[steps.length - 1].at + NO_AUDIO_TAIL_SECONDS;
+}
+
+function currentTime() {
+  if (AUDIO_FILE) return audio.currentTime;
+  return ((Date.now() - manualStart) / 1000) % loopDuration();
+}
+
+function tick() {
+  const t = currentTime();
+  let idx = 0;
+  for (let i = 0; i < steps.length; i++) {
+    if (steps[i].at <= t) idx = i;
+    else break;
+  }
+
+  if (idx !== currentIndex) {
+    steps[currentIndex].el.classList.remove("active");
+    steps[idx].el.classList.add("active");
+    currentIndex = idx;
+  }
+
+  requestAnimationFrame(tick);
 }
 
 function start() {
@@ -49,11 +75,11 @@ function start() {
       // Se il browser blocca comunque la riproduzione automatica,
       // l'utente puo' comunque vedere lo slideshow senza audio.
     });
+  } else {
+    manualStart = Date.now();
   }
 
-  if (steps.length > 1) {
-    setTimeout(showNext, steps[currentIndex].duration);
-  }
+  requestAnimationFrame(tick);
 }
 
 buildSteps();
