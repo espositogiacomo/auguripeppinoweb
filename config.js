@@ -67,8 +67,7 @@ const TIMELINE = [
   { photo: 48, at: "3.10", text: "" },
   { photo: 49, at: "3.15", text: "" },
   { photo: 50, at: "3.20", text: "" },
-  { photo: 51, at: "3.25", text: "" },
-  { photo: 31,  at: "3.30", text: "Ti voglio bene Papà!"}
+  { photo: 31,  at: "3.25", text: "Ti voglio bene Papà!"}
 ];
 
 // Percorso del file mp3 in audio/. Lascialo vuoto ("") per provare
