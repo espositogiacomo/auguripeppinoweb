@@ -69,3 +69,10 @@ const TIMELINE = [
 // lo slideshow senza audio (in quel caso il loop dura fino all'ultimo
 // "at" + qualche secondo, poi ricomincia).
 const AUDIO_FILE = "audio/viaggio-con-te.mp3";
+
+// Aiuto visuale per sincronizzare foto e testi: mostra vicino al tasto
+// pausa il numero della foto corrente e il tempo trascorso (mm:ss),
+// aggiornato in tempo reale insieme alla progress bar. Utile solo in
+// fase di messa a punto della TIMELINE: metti a "false" per nasconderlo
+// quando la sincronizzazione e' definitiva.
+const SHOW_DEBUG_INFO = true;

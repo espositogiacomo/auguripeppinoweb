@@ -6,6 +6,7 @@ const startButton = document.getElementById("start-button");
 const playPauseButton = document.getElementById("play-pause-button");
 const progressBar = document.getElementById("progress-bar");
 const progressFill = document.getElementById("progress-fill");
+const debugInfo = document.getElementById("debug-info");
 
 const NO_AUDIO_TAIL_SECONDS = 5;
 
@@ -32,7 +33,7 @@ function buildSteps() {
     img.className = "slide photo-slide";
 
     slideshow.appendChild(img);
-    steps.push({ el: img, at: parseAt(item.at), text: item.text || "" });
+    steps.push({ el: img, photo: item.photo, at: parseAt(item.at), text: item.text || "" });
   });
   steps[0].el.classList.add("active");
 }
@@ -48,6 +49,13 @@ function updateCaption(step) {
     caption.classList.remove("visible");
     caption.classList.add("hiding");
   }
+}
+
+function formatTime(t) {
+  const totalSeconds = Math.max(0, Math.floor(t));
+  const m = Math.floor(totalSeconds / 60);
+  const s = totalSeconds % 60;
+  return `${m}:${pad(s)}`;
 }
 
 function loopDuration() {
@@ -79,6 +87,10 @@ function tick() {
   if (!isScrubbing) {
     const ratio = Math.min(1, Math.max(0, t / loopDuration()));
     progressFill.style.width = `${ratio * 100}%`;
+  }
+
+  if (SHOW_DEBUG_INFO) {
+    debugInfo.textContent = `Foto ${pad(steps[idx].photo)} · ${formatTime(t)}`;
   }
 
   requestAnimationFrame(tick);
@@ -139,6 +151,7 @@ function start() {
   overlay.classList.add("hidden");
   playPauseButton.classList.remove("hidden");
   progressBar.classList.remove("hidden");
+  if (SHOW_DEBUG_INFO) debugInfo.classList.remove("hidden");
 
   if (steps[0].text) updateCaption(steps[0]);
 
