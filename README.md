@@ -15,6 +15,7 @@ Tutto si gestisce da un unico file: [config.js](config.js).
 - `AUDIO_FILE`: percorso del tuo mp3 (es. `"audio/nome-canzone.mp3"`). Lascialo vuoto (`""`) se non hai ancora il file.
 - `CONFETTI`: parametri dell'effetto coriandoli sulla prima foto (quella del brindisi) — quante volte lanciarli, ogni quanto, quanti coriandoli, quanto in alto/lontano arrivano (`startVelocity`/`gravity`), quanto durano (`decay`/`ticks`), dimensione e colori. Metti `enabled: false` per disattivarlo del tutto.
 - `PHOTOS_DIR`: cartella da cui vengono caricate le foto. Di norma `"photos/optimized"` (versioni con correzione fotografica leggera — vedi [tools/optimize-photos/](tools/optimize-photos)); per tornare agli scatti originali basta rimettere `"photos"`.
+- `SHOW_COMPARISON`: se `true`, mostra ogni foto affiancata alla sua versione originale (per controllare a colpo d'occhio l'effetto della correzione fotografica). Metti `false` per tornare alla visualizzazione normale (una foto sola).
 
 Non serve toccare nessun altro file.
 

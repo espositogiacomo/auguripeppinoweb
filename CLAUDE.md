@@ -33,6 +33,9 @@ gratis su GitHub Pages.
   con la canzone (attivo di default, per ora — l'utente potrebbe volerlo disattivare quando ha finito i tarocchi).
 - `PHOTOS_DIR`: `"photos/optimized"` normalmente; mettere `"photos"` per tornare agli originali non ritoccati (rollback
   immediato, un solo valore da cambiare).
+- `SHOW_COMPARISON`: se `true` (attivo per ora, su richiesta), ogni slide mostra affiancate originale (sinistra) e
+  ottimizzata (destra) con etichette, per verificare a colpo d'occhio la correzione fotografica. E' un aiuto
+  temporaneo come `SHOW_DEBUG_INFO`: quando l'utente ha finito di controllare, va rimesso a `false`.
 - `CONFETTI`: parametri dell'effetto coriandoli sulla prima foto (enabled, burstCount, burstDelayMs, initialDelayMs,
   particleCount, spread, startVelocity, gravity, decay, ticks, scalar, colors).
 
@@ -105,7 +108,7 @@ in 1-2 minuti.
   quel caso: validare (virgole, ordine, file esistenti), testare in locale, poi commit+push.
 - Quando l'utente carica nuove foto, spesso arrivano come `WhatsApp Image ... .jpeg` — rinominarle in `foto-NN.jpg`
   proseguendo la numerazione esistente, poi rilanciare `node optimize.js`.
-- Il flag `SHOW_DEBUG_INFO` in `config.js` è pensato per essere disattivato (`false`) quando l'utente ha finito di
-  sincronizzare foto/testi con la canzone — non disattivarlo di propria iniziativa, ma è lecito ricordarglielo se
-  la sincronizzazione sembra ormai definitiva.
+- I flag `SHOW_DEBUG_INFO` e `SHOW_COMPARISON` in `config.js` sono aiuti temporanei (sincronizzazione timeline e
+  verifica della correzione fotografica): non disattivarli di propria iniziativa, ma e' lecito ricordare all'utente
+  di rimetterli a `false` quando sembrano ormai aver esaurito il loro scopo.
 - Non modificare mai gli originali in `photos/` — solo `photos/optimized/` viene rigenerato dallo script.

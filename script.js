@@ -25,15 +25,41 @@ function parseAt(at) {
   return (parseInt(minutes, 10) || 0) * 60 + (parseInt(seconds, 10) || 0);
 }
 
+function makeComparisonHalf(src, label) {
+  const half = document.createElement("div");
+  half.className = "compare-half";
+
+  const img = document.createElement("img");
+  img.src = src;
+  img.alt = label;
+  half.appendChild(img);
+
+  const tag = document.createElement("span");
+  tag.className = "compare-label";
+  tag.textContent = label;
+  half.appendChild(tag);
+
+  return half;
+}
+
 function buildSteps() {
   TIMELINE.forEach((item) => {
-    const img = document.createElement("img");
-    img.src = `${PHOTOS_DIR}/foto-${pad(item.photo)}.jpg`;
-    img.alt = `Foto ${item.photo}`;
-    img.className = "slide photo-slide";
+    let el;
 
-    slideshow.appendChild(img);
-    steps.push({ el: img, photo: item.photo, at: parseAt(item.at), text: item.text || "" });
+    if (SHOW_COMPARISON) {
+      el = document.createElement("div");
+      el.className = "slide compare-slide";
+      el.appendChild(makeComparisonHalf(`photos/foto-${pad(item.photo)}.jpg`, "originale"));
+      el.appendChild(makeComparisonHalf(`${PHOTOS_DIR}/foto-${pad(item.photo)}.jpg`, "ottimizzata"));
+    } else {
+      el = document.createElement("img");
+      el.src = `${PHOTOS_DIR}/foto-${pad(item.photo)}.jpg`;
+      el.alt = `Foto ${item.photo}`;
+      el.className = "slide photo-slide";
+    }
+
+    slideshow.appendChild(el);
+    steps.push({ el, photo: item.photo, at: parseAt(item.at), text: item.text || "" });
   });
   steps[0].el.classList.add("active");
 }

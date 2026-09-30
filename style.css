@@ -40,6 +40,44 @@ html, body {
   background: #000;
 }
 
+/* Confronto affiancato originale/ottimizzata (SHOW_COMPARISON) */
+#slideshow .compare-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.compare-half {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.compare-half:first-child {
+  border-left: none;
+}
+
+.compare-half img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center top;
+  background: #000;
+}
+
+.compare-half .compare-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 0.2em 0.6em;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffcc00;
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
+}
+
 #start-overlay {
   position: fixed;
   inset: 0;

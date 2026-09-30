@@ -84,6 +84,13 @@ const SHOW_DEBUG_INFO = true;
 // rimettere "photos".
 const PHOTOS_DIR = "photos/optimized";
 
+// Aiuto visuale per controllare la correzione fotografica: se "true",
+// ogni foto viene mostrata affiancata alla sua versione originale
+// (sinistra = originale, destra = ottimizzata), per confrontarle a colpo
+// d'occhio. Utile solo in fase di verifica: metti a "false" per tornare
+// alla visualizzazione normale (una foto sola, quella di PHOTOS_DIR).
+const SHOW_COMPARISON = true;
+
 // Effetto coriandoli sulla prima foto (il brindisi). Parte una sola volta
 // per visualizzazione della pagina, da entrambi gli angoli inferiori.
 const CONFETTI = {
