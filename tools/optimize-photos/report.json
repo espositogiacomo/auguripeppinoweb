@@ -385,72 +385,6 @@
     "sizeAfterKB": 102
   },
   {
-    "file": "foto-36.jpg",
-    "isPrintLike": false,
-    "luminance": 129,
-    "stdev": 46,
-    "shift": "-3.3",
-    "contrastBoost": "5%",
-    "saturation": 1.06,
-    "sizeBeforeKB": 132,
-    "sizeAfterKB": 157
-  },
-  {
-    "file": "foto-37.jpg",
-    "isPrintLike": false,
-    "luminance": 146,
-    "stdev": 52,
-    "shift": "-9.0",
-    "contrastBoost": "3%",
-    "saturation": 1.06,
-    "sizeBeforeKB": 145,
-    "sizeAfterKB": 172
-  },
-  {
-    "file": "foto-38.jpg",
-    "isPrintLike": false,
-    "luminance": 132,
-    "stdev": 44,
-    "shift": "-4.1",
-    "contrastBoost": "6%",
-    "saturation": 1.06,
-    "sizeBeforeKB": 108,
-    "sizeAfterKB": 127
-  },
-  {
-    "file": "foto-39.jpg",
-    "isPrintLike": false,
-    "luminance": 120,
-    "stdev": 51,
-    "shift": "-0.0",
-    "contrastBoost": "3%",
-    "saturation": 1.06,
-    "sizeBeforeKB": 149,
-    "sizeAfterKB": 173
-  },
-  {
-    "file": "foto-40.jpg",
-    "isPrintLike": false,
-    "luminance": 135,
-    "stdev": 48,
-    "shift": "-5.4",
-    "contrastBoost": "4%",
-    "saturation": 1.06,
-    "sizeBeforeKB": 131,
-    "sizeAfterKB": 157
-  },
-  {
-    "file": "foto-41.jpg",
-    "isPrintLike": false,
-    "luminance": 130,
-    "stdev": 47,
-    "shift": "-3.5",
-    "contrastBoost": "5%",
-    "saturation": 1.06,
-    "sizeBeforeKB": 135,
-    "sizeAfterKB": 161
-  },
-  {
     "file": "foto-42.jpg",
     "isPrintLike": true,
     "luminance": 139,
@@ -493,5 +427,93 @@
     "saturation": 1.1,
     "sizeBeforeKB": 194,
     "sizeAfterKB": 204
+  },
+  {
+    "file": "foto-46.jpg",
+    "isPrintLike": false,
+    "luminance": 128,
+    "stdev": 84,
+    "shift": "-2.6",
+    "contrastBoost": "0%",
+    "saturation": 1.06,
+    "sizeBeforeKB": 194,
+    "sizeAfterKB": 225
+  },
+  {
+    "file": "foto-47.jpg",
+    "isPrintLike": true,
+    "luminance": 63,
+    "stdev": 53,
+    "shift": "18.0",
+    "contrastBoost": "2%",
+    "saturation": 1.1,
+    "sizeBeforeKB": 188,
+    "sizeAfterKB": 188
+  },
+  {
+    "file": "foto-48.jpg",
+    "isPrintLike": false,
+    "luminance": 140,
+    "stdev": 55,
+    "shift": "-7.1",
+    "contrastBoost": "1%",
+    "saturation": 1.06,
+    "sizeBeforeKB": 156,
+    "sizeAfterKB": 187
+  },
+  {
+    "file": "foto-49.jpg",
+    "isPrintLike": true,
+    "luminance": 114,
+    "stdev": 60,
+    "shift": "2.1",
+    "contrastBoost": "0%",
+    "saturation": 1.1,
+    "sizeBeforeKB": 161,
+    "sizeAfterKB": 169
+  },
+  {
+    "file": "foto-50.jpg",
+    "isPrintLike": false,
+    "luminance": 149,
+    "stdev": 74,
+    "shift": "-10.1",
+    "contrastBoost": "0%",
+    "saturation": 1.06,
+    "sizeBeforeKB": 230,
+    "sizeAfterKB": 269
+  },
+  {
+    "file": "foto-51.jpg",
+    "isPrintLike": true,
+    "luminance": 106,
+    "stdev": 65,
+    "shift": "5.0",
+    "contrastBoost": "0%",
+    "saturation": 1.1,
+    "sizeBeforeKB": 178,
+    "sizeAfterKB": 197
+  },
+  {
+    "file": "foto-52.jpg",
+    "isPrintLike": true,
+    "luminance": 102,
+    "stdev": 62,
+    "shift": "6.2",
+    "contrastBoost": "0%",
+    "saturation": 1.1,
+    "sizeBeforeKB": 235,
+    "sizeAfterKB": 259
+  },
+  {
+    "file": "foto-53.jpg",
+    "isPrintLike": false,
+    "luminance": 97,
+    "stdev": 82,
+    "shift": "8.0",
+    "contrastBoost": "0%",
+    "saturation": 1.06,
+    "sizeBeforeKB": 130,
+    "sizeAfterKB": 149
   }
 ]

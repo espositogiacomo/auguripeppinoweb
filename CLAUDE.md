@@ -15,7 +15,7 @@ gratis su GitHub Pages.
 - [style.css](style.css) — tutto lo stile, incluse le animazioni (fade, comparsa/scomparsa a fumo, pulsazione)
 - [config.js](config.js) — **unico file che l'utente deve modificare** per contenuto/timing (vedi sotto)
 - [script.js](script.js) — tutta la logica: costruzione slide, sincronizzazione col tempo audio, scrubbing, pausa, coriandoli
-- [photos/](photos) — foto originali, numerate `foto-01.jpg` ... (numerazione attuale: **fino a foto-45.jpg**)
+- [photos/](photos) — foto originali, numerate `foto-01.jpg` ... (numerazione attuale: **fino a foto-53.jpg**; foto-32 e foto-36…41 rimosse di proposito, la sequenza ha dei buchi)
 - [photos/optimized/](photos/optimized) — foto con correzione fotografica conservativa (vedi sotto), stessi nomi file, usate dal sito
 - [audio/viaggio-con-te.mp3](audio) — traccia audio
 - [tools/optimize-photos/](tools/optimize-photos) — script Node/Sharp per generare `photos/optimized/` dagli originali
@@ -26,8 +26,8 @@ gratis su GitHub Pages.
   `at` è il momento della canzone in cui la foto deve apparire; la durata di visualizzazione si calcola da sola come
   differenza col prossimo `at` (l'ultima dura fino alla fine della canzone, poi loop). `text` è una didascalia opzionale
   mostrata sotto la foto con animazione a effetto fumo.
-  **Stato attuale**: la TIMELINE arriva a `photo: 35` circa (verificare in file). Le foto **36-45 sono state aggiunte e
-  rinominate ma NON ancora inserite in TIMELINE** — prossima modifica plausibile.
+  **Stato attuale**: la TIMELINE (40 voci) usa quasi tutte le foto, incluse le nuove 44-53; verificare nel file quali
+  restano fuori.
 - `AUDIO_FILE`: percorso mp3, oppure `""` per provare senza audio (fallback a un clock manuale).
 - `SHOW_DEBUG_INFO`: se `true`, mostra vicino al tasto pausa "Foto NN · m:ss" per aiutare a sincronizzare la TIMELINE
   con la canzone (attivo di default, per ora — l'utente potrebbe volerlo disattivare quando ha finito i tarocchi).
