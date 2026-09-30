@@ -82,6 +82,7 @@ function tick() {
     steps[idx].el.classList.add("active");
     currentIndex = idx;
     updateCaption(steps[idx]);
+    if (idx === 0) playConfetti();
   }
 
   if (!isScrubbing) {
@@ -154,6 +155,7 @@ function start() {
   if (SHOW_DEBUG_INFO) debugInfo.classList.remove("hidden");
 
   if (steps[0].text) updateCaption(steps[0]);
+  setTimeout(playConfetti, 400); // la prima slide e' quella iniziale
 
   if (AUDIO_FILE) {
     audio.src = AUDIO_FILE;
@@ -166,6 +168,30 @@ function start() {
   }
 
   requestAnimationFrame(tick);
+}
+
+// ==========================================================
+// EFFETTO CORIANDOLI (indipendente dalla logica del carousel)
+// ==========================================================
+// Parte una sola volta, quando viene mostrata la prima slide (foto
+// del brindisi): 3 piccoli burst da entrambi gli angoli inferiori,
+// verso l'alto e verso il centro, distanziati di circa 250ms.
+
+let confettiPlayed = false;
+
+function playConfetti() {
+  if (confettiPlayed || typeof confetti !== "function") return;
+  confettiPlayed = true;
+
+  const burst = () => {
+    const shared = { particleCount: 30, spread: 70, startVelocity: 45, disableForReducedMotion: true };
+    confetti({ ...shared, angle: 60, origin: { x: 0, y: 1 } });   // angolo in basso a sinistra, verso l'alto/destra
+    confetti({ ...shared, angle: 120, origin: { x: 1, y: 1 } });  // angolo in basso a destra, verso l'alto/sinistra
+  };
+
+  burst();
+  setTimeout(burst, 250);
+  setTimeout(burst, 500);
 }
 
 buildSteps();
