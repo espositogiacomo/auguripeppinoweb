@@ -6,10 +6,9 @@
     "stdev": 50,
     "shift": "5.1",
     "contrastBoost": "3%",
-    "gains": "0.92/0.99/1.14",
     "saturation": 1.1,
     "sizeBeforeKB": 69,
-    "sizeAfterKB": 45
+    "sizeAfterKB": 46
   },
   {
     "file": "foto-02.jpg",
@@ -18,10 +17,9 @@
     "stdev": 51,
     "shift": "-1.8",
     "contrastBoost": "3%",
-    "gains": "0.90/1.03/1.15",
     "saturation": 1.1,
     "sizeBeforeKB": 189,
-    "sizeAfterKB": 182
+    "sizeAfterKB": 180
   },
   {
     "file": "foto-03.jpg",
@@ -30,7 +28,6 @@
     "stdev": 54,
     "shift": "-12.0",
     "contrastBoost": "2%",
-    "gains": "0.97/1.00/1.03",
     "saturation": 1.06,
     "sizeBeforeKB": 178,
     "sizeAfterKB": 215
@@ -42,10 +39,9 @@
     "stdev": 64,
     "shift": "-5.4",
     "contrastBoost": "0%",
-    "gains": "0.98/1.00/1.02",
     "saturation": 1.06,
     "sizeBeforeKB": 360,
-    "sizeAfterKB": 404
+    "sizeAfterKB": 402
   },
   {
     "file": "foto-05.jpg",
@@ -54,10 +50,9 @@
     "stdev": 63,
     "shift": "-4.0",
     "contrastBoost": "0%",
-    "gains": "0.97/1.01/1.02",
     "saturation": 1.06,
     "sizeBeforeKB": 278,
-    "sizeAfterKB": 317
+    "sizeAfterKB": 316
   },
   {
     "file": "foto-06.jpg",
@@ -66,10 +61,9 @@
     "stdev": 62,
     "shift": "0.2",
     "contrastBoost": "0%",
-    "gains": "0.96/1.01/1.04",
     "saturation": 1.1,
     "sizeBeforeKB": 348,
-    "sizeAfterKB": 353
+    "sizeAfterKB": 349
   },
   {
     "file": "foto-07.jpg",
@@ -78,10 +72,9 @@
     "stdev": 52,
     "shift": "-1.1",
     "contrastBoost": "3%",
-    "gains": "0.95/1.00/1.06",
     "saturation": 1.1,
     "sizeBeforeKB": 181,
-    "sizeAfterKB": 179
+    "sizeAfterKB": 181
   },
   {
     "file": "foto-08.jpg",
@@ -90,10 +83,9 @@
     "stdev": 58,
     "shift": "2.4",
     "contrastBoost": "0%",
-    "gains": "0.95/1.02/1.03",
     "saturation": 1.1,
     "sizeBeforeKB": 180,
-    "sizeAfterKB": 196
+    "sizeAfterKB": 195
   },
   {
     "file": "foto-09.jpg",
@@ -102,10 +94,9 @@
     "stdev": 52,
     "shift": "4.9",
     "contrastBoost": "2%",
-    "gains": "0.97/1.01/1.02",
     "saturation": 1.06,
     "sizeBeforeKB": 189,
-    "sizeAfterKB": 222
+    "sizeAfterKB": 223
   },
   {
     "file": "foto-10.jpg",
@@ -114,7 +105,6 @@
     "stdev": 61,
     "shift": "-0.2",
     "contrastBoost": "0%",
-    "gains": "0.95/1.01/1.06",
     "saturation": 1.1,
     "sizeBeforeKB": 303,
     "sizeAfterKB": 309
@@ -126,10 +116,9 @@
     "stdev": 52,
     "shift": "9.9",
     "contrastBoost": "2%",
-    "gains": "0.98/1.04/0.99",
     "saturation": 1.06,
     "sizeBeforeKB": 164,
-    "sizeAfterKB": 199
+    "sizeAfterKB": 200
   },
   {
     "file": "foto-12.jpg",
@@ -138,7 +127,6 @@
     "stdev": 54,
     "shift": "5.7",
     "contrastBoost": "2%",
-    "gains": "1.02/1.01/0.97",
     "saturation": 1.06,
     "sizeBeforeKB": 233,
     "sizeAfterKB": 283
@@ -150,10 +138,9 @@
     "stdev": 61,
     "shift": "3.9",
     "contrastBoost": "0%",
-    "gains": "0.94/1.03/1.04",
     "saturation": 1.1,
     "sizeBeforeKB": 152,
-    "sizeAfterKB": 162
+    "sizeAfterKB": 161
   },
   {
     "file": "foto-14.jpg",
@@ -162,7 +149,6 @@
     "stdev": 56,
     "shift": "-4.6",
     "contrastBoost": "1%",
-    "gains": "0.99/1.01/1.01",
     "saturation": 1.06,
     "sizeBeforeKB": 167,
     "sizeAfterKB": 209
@@ -174,10 +160,9 @@
     "stdev": 59,
     "shift": "-6.1",
     "contrastBoost": "0%",
-    "gains": "0.92/1.02/1.10",
     "saturation": 1.1,
     "sizeBeforeKB": 289,
-    "sizeAfterKB": 307
+    "sizeAfterKB": 297
   },
   {
     "file": "foto-16.jpg",
@@ -186,10 +171,9 @@
     "stdev": 49,
     "shift": "-6.1",
     "contrastBoost": "4%",
-    "gains": "0.99/1.01/1.00",
     "saturation": 1.06,
     "sizeBeforeKB": 345,
-    "sizeAfterKB": 389
+    "sizeAfterKB": 392
   },
   {
     "file": "foto-17.jpg",
@@ -198,7 +182,6 @@
     "stdev": 69,
     "shift": "-2.1",
     "contrastBoost": "0%",
-    "gains": "1.00/1.00/0.99",
     "saturation": 1.06,
     "sizeBeforeKB": 152,
     "sizeAfterKB": 180
@@ -210,7 +193,6 @@
     "stdev": 59,
     "shift": "0.6",
     "contrastBoost": "0%",
-    "gains": "1.01/1.00/0.99",
     "saturation": 1.06,
     "sizeBeforeKB": 202,
     "sizeAfterKB": 246
@@ -222,10 +204,9 @@
     "stdev": 54,
     "shift": "-0.9",
     "contrastBoost": "2%",
-    "gains": "0.94/1.01/1.07",
     "saturation": 1.1,
     "sizeBeforeKB": 156,
-    "sizeAfterKB": 158
+    "sizeAfterKB": 160
   },
   {
     "file": "foto-20.jpg",
@@ -234,10 +215,9 @@
     "stdev": 56,
     "shift": "1.0",
     "contrastBoost": "1%",
-    "gains": "0.93/1.02/1.08",
     "saturation": 1.1,
     "sizeBeforeKB": 214,
-    "sizeAfterKB": 227
+    "sizeAfterKB": 228
   },
   {
     "file": "foto-21.jpg",
@@ -246,10 +226,9 @@
     "stdev": 61,
     "shift": "6.3",
     "contrastBoost": "0%",
-    "gains": "0.98/0.99/1.04",
     "saturation": 1.06,
     "sizeBeforeKB": 178,
-    "sizeAfterKB": 205
+    "sizeAfterKB": 203
   },
   {
     "file": "foto-22.jpg",
@@ -258,10 +237,9 @@
     "stdev": 72,
     "shift": "18.0",
     "contrastBoost": "0%",
-    "gains": "1.05/0.99/0.96",
     "saturation": 1.1,
     "sizeBeforeKB": 120,
-    "sizeAfterKB": 134
+    "sizeAfterKB": 131
   },
   {
     "file": "foto-23.jpg",
@@ -270,10 +248,9 @@
     "stdev": 70,
     "shift": "18.0",
     "contrastBoost": "0%",
-    "gains": "1.05/0.99/0.96",
     "saturation": 1.1,
     "sizeBeforeKB": 119,
-    "sizeAfterKB": 133
+    "sizeAfterKB": 130
   },
   {
     "file": "foto-24.jpg",
@@ -282,10 +259,9 @@
     "stdev": 57,
     "shift": "-5.7",
     "contrastBoost": "0%",
-    "gains": "0.95/0.99/1.08",
     "saturation": 1.1,
     "sizeBeforeKB": 161,
-    "sizeAfterKB": 176
+    "sizeAfterKB": 175
   },
   {
     "file": "foto-25.jpg",
@@ -294,10 +270,9 @@
     "stdev": 53,
     "shift": "0.6",
     "contrastBoost": "2%",
-    "gains": "0.94/0.99/1.10",
     "saturation": 1.1,
     "sizeBeforeKB": 89,
-    "sizeAfterKB": 59
+    "sizeAfterKB": 61
   },
   {
     "file": "foto-26.jpg",
@@ -306,10 +281,9 @@
     "stdev": 61,
     "shift": "6.5",
     "contrastBoost": "0%",
-    "gains": "0.98/0.99/1.04",
     "saturation": 1.06,
     "sizeBeforeKB": 179,
-    "sizeAfterKB": 206
+    "sizeAfterKB": 204
   },
   {
     "file": "foto-27.jpg",
@@ -318,10 +292,9 @@
     "stdev": 63,
     "shift": "-11.1",
     "contrastBoost": "0%",
-    "gains": "0.99/1.00/1.02",
     "saturation": 1.06,
     "sizeBeforeKB": 347,
-    "sizeAfterKB": 356
+    "sizeAfterKB": 354
   },
   {
     "file": "foto-28.jpg",
@@ -330,10 +303,9 @@
     "stdev": 71,
     "shift": "1.1",
     "contrastBoost": "0%",
-    "gains": "0.95/1.02/1.03",
     "saturation": 1.1,
     "sizeBeforeKB": 244,
-    "sizeAfterKB": 252
+    "sizeAfterKB": 251
   },
   {
     "file": "foto-29.jpg",
@@ -342,7 +314,6 @@
     "stdev": 72,
     "shift": "1.0",
     "contrastBoost": "0%",
-    "gains": "0.96/1.01/1.03",
     "saturation": 1.1,
     "sizeBeforeKB": 175,
     "sizeAfterKB": 185
@@ -354,7 +325,6 @@
     "stdev": 71,
     "shift": "-2.4",
     "contrastBoost": "0%",
-    "gains": "1.00/1.00/1.00",
     "saturation": 1.06,
     "sizeBeforeKB": 137,
     "sizeAfterKB": 157
@@ -366,10 +336,9 @@
     "stdev": 65,
     "shift": "3.8",
     "contrastBoost": "0%",
-    "gains": "0.94/1.04/1.04",
     "saturation": 1.1,
     "sizeBeforeKB": 230,
-    "sizeAfterKB": 236
+    "sizeAfterKB": 235
   },
   {
     "file": "foto-32.jpg",
@@ -378,10 +347,9 @@
     "stdev": 71,
     "shift": "1.1",
     "contrastBoost": "0%",
-    "gains": "0.95/1.02/1.03",
     "saturation": 1.1,
     "sizeBeforeKB": 244,
-    "sizeAfterKB": 252
+    "sizeAfterKB": 251
   },
   {
     "file": "foto-33.jpg",
@@ -390,7 +358,6 @@
     "stdev": 72,
     "shift": "-0.2",
     "contrastBoost": "0%",
-    "gains": "1.00/1.00/1.00",
     "saturation": 1.06,
     "sizeBeforeKB": 136,
     "sizeAfterKB": 151
@@ -402,10 +369,9 @@
     "stdev": 66,
     "shift": "6.7",
     "contrastBoost": "0%",
-    "gains": "1.08/0.98/0.96",
     "saturation": 1.1,
     "sizeBeforeKB": 92,
-    "sizeAfterKB": 98
+    "sizeAfterKB": 97
   },
   {
     "file": "foto-35.jpg",
@@ -414,7 +380,6 @@
     "stdev": 76,
     "shift": "4.7",
     "contrastBoost": "0%",
-    "gains": "0.98/1.00/1.03",
     "saturation": 1.06,
     "sizeBeforeKB": 88,
     "sizeAfterKB": 102
@@ -426,10 +391,9 @@
     "stdev": 46,
     "shift": "-3.3",
     "contrastBoost": "5%",
-    "gains": "1.00/0.99/1.01",
     "saturation": 1.06,
     "sizeBeforeKB": 132,
-    "sizeAfterKB": 153
+    "sizeAfterKB": 157
   },
   {
     "file": "foto-37.jpg",
@@ -438,10 +402,9 @@
     "stdev": 52,
     "shift": "-9.0",
     "contrastBoost": "3%",
-    "gains": "0.99/0.99/1.02",
     "saturation": 1.06,
     "sizeBeforeKB": 145,
-    "sizeAfterKB": 170
+    "sizeAfterKB": 172
   },
   {
     "file": "foto-38.jpg",
@@ -450,10 +413,9 @@
     "stdev": 44,
     "shift": "-4.1",
     "contrastBoost": "6%",
-    "gains": "1.00/0.99/1.00",
     "saturation": 1.06,
     "sizeBeforeKB": 108,
-    "sizeAfterKB": 125
+    "sizeAfterKB": 127
   },
   {
     "file": "foto-39.jpg",
@@ -462,10 +424,9 @@
     "stdev": 51,
     "shift": "-0.0",
     "contrastBoost": "3%",
-    "gains": "0.99/0.99/1.02",
     "saturation": 1.06,
     "sizeBeforeKB": 149,
-    "sizeAfterKB": 172
+    "sizeAfterKB": 173
   },
   {
     "file": "foto-40.jpg",
@@ -474,10 +435,9 @@
     "stdev": 48,
     "shift": "-5.4",
     "contrastBoost": "4%",
-    "gains": "0.99/0.99/1.02",
     "saturation": 1.06,
     "sizeBeforeKB": 131,
-    "sizeAfterKB": 153
+    "sizeAfterKB": 157
   },
   {
     "file": "foto-41.jpg",
@@ -486,10 +446,9 @@
     "stdev": 47,
     "shift": "-3.5",
     "contrastBoost": "5%",
-    "gains": "0.99/0.99/1.02",
     "saturation": 1.06,
     "sizeBeforeKB": 135,
-    "sizeAfterKB": 158
+    "sizeAfterKB": 161
   },
   {
     "file": "foto-42.jpg",
@@ -498,10 +457,9 @@
     "stdev": 55,
     "shift": "-6.8",
     "contrastBoost": "1%",
-    "gains": "0.95/1.01/1.05",
     "saturation": 1.1,
     "sizeBeforeKB": 223,
-    "sizeAfterKB": 244
+    "sizeAfterKB": 243
   },
   {
     "file": "foto-43.jpg",
@@ -510,10 +468,9 @@
     "stdev": 62,
     "shift": "3.8",
     "contrastBoost": "0%",
-    "gains": "0.93/1.02/1.08",
     "saturation": 1.1,
     "sizeBeforeKB": 253,
-    "sizeAfterKB": 279
+    "sizeAfterKB": 277
   },
   {
     "file": "foto-44.jpg",
@@ -522,7 +479,6 @@
     "stdev": 77,
     "shift": "-2.4",
     "contrastBoost": "0%",
-    "gains": "1.00/0.99/1.01",
     "saturation": 1.06,
     "sizeBeforeKB": 146,
     "sizeAfterKB": 170
@@ -534,9 +490,8 @@
     "stdev": 59,
     "shift": "7.8",
     "contrastBoost": "0%",
-    "gains": "0.90/1.03/1.12",
     "saturation": 1.1,
     "sizeBeforeKB": 194,
-    "sizeAfterKB": 208
+    "sizeAfterKB": 204
   }
 ]

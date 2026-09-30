@@ -55,10 +55,17 @@ gratis su GitHub Pages.
 
 Vincolo assoluto rispettato: **nessuna alterazione del contenuto** (niente face enhancement/restoration, niente
 generative fill, niente ricostruzione di dettagli). Solo correzioni globali non distruttive via Sharp: esposizione,
-contrasto, bilanciamento del bianco, vibrance leggera, nitidezza molto leggera, riduzione rumore moderata — tutte
-calcolate per-immagine dai dati misurati (luminanza, deviazione standard, dominante cromatica) e applicate solo
-parzialmente (mai una normalizzazione piena), per restare fedeli all'originale. Dettagli e parametri esatti in
+contrasto, vibrance leggera, nitidezza molto leggera, riduzione rumore moderata — tutte calcolate per-immagine dai
+dati misurati (luminanza, deviazione standard, dominante cromatica) e applicate solo parzialmente (mai una
+normalizzazione piena), per restare fedeli all'originale. Dettagli e parametri esatti in
 [tools/optimize-photos/README.md](tools/optimize-photos/README.md) e [optimize.js](tools/optimize-photos/optimize.js).
+
+**Lezione imparata (importante)**: una prima versione includeva anche un bilanciamento del bianco automatico
+(gray-world parziale). E' stato **rimosso** dopo un controllo visivo con `SHOW_COMPARISON`: su foto con un soggetto
+molto saturo (es. un vestito rosso vivo) l'algoritmo scambiava quel colore per una dominante cromatica e lo
+desaturava visibilmente, tradendo il vincolo di fedeltà. Se in futuro si reintroduce una correzione del bilanciamento
+del bianco, va gestita con grande cautela (es. non basarsi solo sulla media dei canali RGB dell'intera immagine) e
+va sempre riverificata foto per foto con `SHOW_COMPARISON` prima di pubblicare.
 
 **Rigenerare dopo aver aggiunto nuove foto**:
 ```bash

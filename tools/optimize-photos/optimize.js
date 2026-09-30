@@ -40,13 +40,15 @@ async function processOne(file) {
   const a = 1 + contrastBoost;
   const intercept = L * (1 - a) + shift;
 
-  // 3) Bilanciamento del bianco: correzione parziale (35-45%) verso il grigio neutro
-  const wbDamping = isPrintLike ? 0.45 : 0.35;
-  const gainR = clamp(1 + (L / r.mean - 1) * wbDamping, 0.9, 1.15);
-  const gainG = clamp(1 + (L / g.mean - 1) * wbDamping, 0.9, 1.15);
-  const gainB = clamp(1 + (L / b.mean - 1) * wbDamping, 0.9, 1.15);
-
-  // 4) Vibrance: leggera, un po' piu' marcata per le foto "da stampa"
+  // 3) Vibrance: leggera, un po' piu' marcata per le foto "da stampa"
+  //
+  // NOTA: la prima versione di questo script applicava anche un bilanciamento
+  // del bianco automatico (gray-world, parziale). E' stato rimosso: su foto
+  // con un soggetto molto saturo (es. un vestito rosso vivo) l'algoritmo
+  // scambiava quel colore per una dominante cromatica e lo desaturava
+  // visibilmente, tradendo il vincolo di fedelta' assoluta al colore
+  // originale. Meglio lasciare una dominante calda tipica delle stampe
+  // vecchie piuttosto che rischiare di alterare un colore vero.
   const saturation = isPrintLike ? 1.1 : 1.06;
 
   let pipeline = sharp(buf).rotate(); // rotate() senza argomenti applica l'orientamento EXIF
@@ -63,7 +65,6 @@ async function processOne(file) {
 
   pipeline = pipeline
     .linear(a, intercept) // esposizione + contrasto, globali
-    .linear([gainR, gainG, gainB], [0, 0, 0]) // bilanciamento del bianco
     .modulate({ saturation });
 
   if (isPrintLike) {
@@ -85,7 +86,6 @@ async function processOne(file) {
     stdev: Math.round(avgStdev),
     shift: shift.toFixed(1),
     contrastBoost: (contrastBoost * 100).toFixed(0) + "%",
-    gains: [gainR, gainG, gainB].map((g) => g.toFixed(2)).join("/"),
     saturation,
     sizeBeforeKB: Math.round(buf.length / 1024),
     sizeAfterKB: Math.round(outSize / 1024),
@@ -106,7 +106,7 @@ async function processOne(file) {
     report.push(r);
     console.log(
       `${r.file}  print=${r.isPrintLike ? "si " : "no "}  lum=${r.luminance}->shift${r.shift}  ` +
-        `stdev=${r.stdev} contrast+${r.contrastBoost}  wb=${r.gains}  sat=${r.saturation}  ` +
+        `stdev=${r.stdev} contrast+${r.contrastBoost}  sat=${r.saturation}  ` +
         `${r.sizeBeforeKB}KB -> ${r.sizeAfterKB}KB`
     );
   }
