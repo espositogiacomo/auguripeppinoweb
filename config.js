@@ -60,8 +60,8 @@ const TIMELINE = [
   { photo: 25, at: "2.13", text: "E ho capito la timida follia Del tuo essere unico perché " },
   { photo: 26, at: "2.21", text: "Sei la meta del mio viaggio per me E così .... Sempre di più " },
   { photo: 28,  at: "2.34", text: "Somiglio a te Nei tuoi sorrisi E nelle lacrime"},
-  { photo: 27, at: "2.52", text: "E ho imparato ad amare e credere Nella vita rischiando tutta me E ho diviso questo viaggio con te Io con te" },
-  { photo: 33,  at: "3.05", text: ""},
+  { photo: 27, at: "2.52", text: "E ho imparato ad amare e credere Nella vita rischiando tutta me " },
+  { photo: 33,  at: "3.05", text: "E ho diviso questo viaggio con te Io con te"},
   { photo: 31,  at: "3.10", text: "Ti voglio bene Papà!"}
 ];
 
@@ -89,7 +89,7 @@ const PHOTOS_DIR = "photos/optimized";
 // (sinistra = originale, destra = ottimizzata), per confrontarle a colpo
 // d'occhio. Utile solo in fase di verifica: metti a "false" per tornare
 // alla visualizzazione normale (una foto sola, quella di PHOTOS_DIR).
-const SHOW_COMPARISON = true;
+const SHOW_COMPARISON = false;
 
 // Effetto coriandoli sulla prima foto (il brindisi). Parte una sola volta
 // per visualizzazione della pagina, da entrambi gli angoli inferiori.
@@ -101,10 +101,10 @@ const CONFETTI = {
   initialDelayMs: 400, // attesa prima del primo lancio quando la pagina e' pronta
 
   particleCount: 30,   // coriandoli per lato, per ogni lancio
-  spread: 70,          // ampiezza del ventaglio, in gradi (piu' alto = piu' largo)
+  spread: 80,          // ampiezza del ventaglio, in gradi (piu' alto = piu' largo)
 
-  startVelocity: 45,   // spinta iniziale: piu' alto = arrivano piu' in alto/lontano dal centro
-  gravity: 1,          // quanto scendono velocemente: piu' basso = restano su piu' a lungo
+  startVelocity: 55,   // spinta iniziale: piu' alto = arrivano piu' in alto/lontano dal centro
+  gravity: 0.5,          // quanto scendono velocemente: piu' basso = restano su piu' a lungo
   decay: 0.9,          // quanto rallentano nel tempo (0-1): piu' vicino a 1 = volano piu' a lungo
   ticks: 200,          // "fotogrammi" di vita di ogni coriandolo: piu' alto = dura di piu' prima di sparire
 
