@@ -1,0 +1,9 @@
+{
+  "name": "optimize-photos",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Script di correzione fotografica conservativa (dev-only, non parte del sito pubblicato)",
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}

@@ -135,6 +135,51 @@ html, body {
   display: none;
 }
 
+/* Icone disegnate in CSS (niente emoji: colore sempre coerente su ogni piattaforma) */
+.icon-pause,
+.icon-play {
+  display: none;
+}
+
+#play-pause-button:not(.paused) .icon-pause,
+#play-pause-button.paused .icon-play {
+  display: block;
+}
+
+.icon-pause {
+  width: 16px;
+  height: 18px;
+  position: relative;
+}
+
+.icon-pause::before,
+.icon-pause::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  border-radius: 1px;
+  background: #ffcc00;
+}
+
+.icon-pause::before {
+  left: 0;
+}
+
+.icon-pause::after {
+  right: 0;
+}
+
+.icon-play {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  border-style: solid;
+  border-width: 9px 0 9px 16px;
+  border-color: transparent transparent transparent #ffcc00;
+}
+
 /* Aiuto visuale di sincronizzazione (foto corrente + tempo trascorso) */
 #debug-info {
   position: fixed;

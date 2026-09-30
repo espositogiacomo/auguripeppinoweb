@@ -1,0 +1,452 @@
+[
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.32.54 (1).jpeg",
+    "sizeKB": 145,
+    "width": 900,
+    "height": 1600,
+    "luminance": 146,
+    "stdev": 52,
+    "castR": "1.03",
+    "castB": "0.95"
+  },
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.32.54 (2).jpeg",
+    "sizeKB": 108,
+    "width": 900,
+    "height": 1600,
+    "luminance": 132,
+    "stdev": 44,
+    "castR": "0.99",
+    "castB": "0.99"
+  },
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.32.54 (3).jpeg",
+    "sizeKB": 149,
+    "width": 900,
+    "height": 1600,
+    "luminance": 120,
+    "stdev": 51,
+    "castR": "1.02",
+    "castB": "0.95"
+  },
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.32.54 (4).jpeg",
+    "sizeKB": 131,
+    "width": 900,
+    "height": 1600,
+    "luminance": 135,
+    "stdev": 48,
+    "castR": "1.03",
+    "castB": "0.95"
+  },
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.32.54.jpeg",
+    "sizeKB": 132,
+    "width": 900,
+    "height": 1600,
+    "luminance": 129,
+    "stdev": 46,
+    "castR": "1.00",
+    "castB": "0.98"
+  },
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.32.55.jpeg",
+    "sizeKB": 135,
+    "width": 900,
+    "height": 1600,
+    "luminance": 130,
+    "stdev": 47,
+    "castR": "1.03",
+    "castB": "0.95"
+  },
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.33.35.jpeg",
+    "sizeKB": 223,
+    "width": 1200,
+    "height": 1600,
+    "luminance": 139,
+    "stdev": 55,
+    "castR": "1.13",
+    "castB": "0.90"
+  },
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.34.12.jpeg",
+    "sizeKB": 253,
+    "width": 1600,
+    "height": 1200,
+    "luminance": 109,
+    "stdev": 62,
+    "castR": "1.18",
+    "castB": "0.85"
+  },
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.35.42.jpeg",
+    "sizeKB": 146,
+    "width": 900,
+    "height": 1600,
+    "luminance": 127,
+    "stdev": 77,
+    "castR": "1.01",
+    "castB": "0.97"
+  },
+  {
+    "file": "WhatsApp Image 2026-09-29 at 23.36.41.jpeg",
+    "sizeKB": 194,
+    "width": 900,
+    "height": 1600,
+    "luminance": 98,
+    "stdev": 59,
+    "castR": "1.27",
+    "castB": "0.79"
+  },
+  {
+    "file": "foto-01.jpg",
+    "sizeKB": 69,
+    "width": 579,
+    "height": 914,
+    "luminance": 106,
+    "stdev": 50,
+    "castR": "1.22",
+    "castB": "0.76"
+  },
+  {
+    "file": "foto-02.jpg",
+    "sizeKB": 189,
+    "width": 1024,
+    "height": 1600,
+    "luminance": 125,
+    "stdev": 51,
+    "castR": "1.33",
+    "castB": "0.73"
+  },
+  {
+    "file": "foto-03.jpg",
+    "sizeKB": 178,
+    "width": 1200,
+    "height": 1600,
+    "luminance": 158,
+    "stdev": 54,
+    "castR": "1.10",
+    "castB": "0.92"
+  },
+  {
+    "file": "foto-04.jpg",
+    "sizeKB": 360,
+    "width": 1200,
+    "height": 1600,
+    "luminance": 135,
+    "stdev": 64,
+    "castR": "1.07",
+    "castB": "0.93"
+  },
+  {
+    "file": "foto-05.jpg",
+    "sizeKB": 278,
+    "width": 1200,
+    "height": 1600,
+    "luminance": 132,
+    "stdev": 63,
+    "castR": "1.08",
+    "castB": "0.95"
+  },
+  {
+    "file": "foto-06.jpg",
+    "sizeKB": 348,
+    "width": 1200,
+    "height": 1600,
+    "luminance": 119,
+    "stdev": 62,
+    "castR": "1.10",
+    "castB": "0.92"
+  },
+  {
+    "file": "foto-07.jpg",
+    "sizeKB": 181,
+    "width": 1599,
+    "height": 1119,
+    "luminance": 123,
+    "stdev": 52,
+    "castR": "1.12",
+    "castB": "0.88"
+  },
+  {
+    "file": "foto-08.jpg",
+    "sizeKB": 180,
+    "width": 1200,
+    "height": 1600,
+    "luminance": 113,
+    "stdev": 58,
+    "castR": "1.12",
+    "castB": "0.93"
+  },
+  {
+    "file": "foto-09.jpg",
+    "sizeKB": 189,
+    "width": 988,
+    "height": 1600,
+    "luminance": 106,
+    "stdev": 52,
+    "castR": "1.08",
+    "castB": "0.94"
+  },
+  {
+    "file": "foto-10.jpg",
+    "sizeKB": 303,
+    "width": 1079,
+    "height": 1600,
+    "luminance": 121,
+    "stdev": 61,
+    "castR": "1.12",
+    "castB": "0.89"
+  },
+  {
+    "file": "foto-11.jpg",
+    "sizeKB": 164,
+    "width": 1169,
+    "height": 1600,
+    "luminance": 92,
+    "stdev": 52,
+    "castR": "1.07",
+    "castB": "1.04"
+  },
+  {
+    "file": "foto-12.jpg",
+    "sizeKB": 233,
+    "width": 1201,
+    "height": 1600,
+    "luminance": 104,
+    "stdev": 54,
+    "castR": "0.94",
+    "castB": "1.09"
+  },
+  {
+    "file": "foto-13.jpg",
+    "sizeKB": 152,
+    "width": 1243,
+    "height": 1600,
+    "luminance": 109,
+    "stdev": 61,
+    "castR": "1.15",
+    "castB": "0.91"
+  },
+  {
+    "file": "foto-14.jpg",
+    "sizeKB": 167,
+    "width": 1209,
+    "height": 1600,
+    "luminance": 133,
+    "stdev": 56,
+    "castR": "1.04",
+    "castB": "0.98"
+  },
+  {
+    "file": "foto-15.jpg",
+    "sizeKB": 289,
+    "width": 1200,
+    "height": 1600,
+    "luminance": 137,
+    "stdev": 59,
+    "castR": "1.22",
+    "castB": "0.82"
+  },
+  {
+    "file": "foto-16.jpg",
+    "sizeKB": 345,
+    "width": 1488,
+    "height": 1599,
+    "luminance": 138,
+    "stdev": 49,
+    "castR": "1.02",
+    "castB": "1.01"
+  },
+  {
+    "file": "foto-17.jpg",
+    "sizeKB": 152,
+    "width": 1295,
+    "height": 1600,
+    "luminance": 126,
+    "stdev": 69,
+    "castR": "0.99",
+    "castB": "1.02"
+  },
+  {
+    "file": "foto-18.jpg",
+    "sizeKB": 202,
+    "width": 1290,
+    "height": 1600,
+    "luminance": 118,
+    "stdev": 59,
+    "castR": "0.98",
+    "castB": "1.02"
+  },
+  {
+    "file": "foto-19.jpg",
+    "sizeKB": 156,
+    "width": 1170,
+    "height": 1600,
+    "luminance": 122,
+    "stdev": 54,
+    "castR": "1.16",
+    "castB": "0.87"
+  },
+  {
+    "file": "foto-20.jpg",
+    "sizeKB": 214,
+    "width": 1292,
+    "height": 1600,
+    "luminance": 117,
+    "stdev": 56,
+    "castR": "1.19",
+    "castB": "0.85"
+  },
+  {
+    "file": "foto-21.jpg",
+    "sizeKB": 178,
+    "width": 1600,
+    "height": 1200,
+    "luminance": 102,
+    "stdev": 61,
+    "castR": "1.08",
+    "castB": "0.90"
+  },
+  {
+    "file": "foto-22.jpg",
+    "sizeKB": 120,
+    "width": 1600,
+    "height": 1200,
+    "luminance": 67,
+    "stdev": 72,
+    "castR": "0.89",
+    "castB": "1.09"
+  },
+  {
+    "file": "foto-23.jpg",
+    "sizeKB": 119,
+    "width": 1600,
+    "height": 1200,
+    "luminance": 66,
+    "stdev": 70,
+    "castR": "0.89",
+    "castB": "1.09"
+  },
+  {
+    "file": "foto-24.jpg",
+    "sizeKB": 161,
+    "width": 1200,
+    "height": 1600,
+    "luminance": 136,
+    "stdev": 57,
+    "castR": "1.13",
+    "castB": "0.85"
+  },
+  {
+    "file": "foto-25.jpg",
+    "sizeKB": 89,
+    "width": 700,
+    "height": 1063,
+    "luminance": 118,
+    "stdev": 53,
+    "castR": "1.16",
+    "castB": "0.82"
+  },
+  {
+    "file": "foto-26.jpg",
+    "sizeKB": 179,
+    "width": 1600,
+    "height": 1200,
+    "luminance": 101,
+    "stdev": 61,
+    "castR": "1.07",
+    "castB": "0.90"
+  },
+  {
+    "file": "foto-27.jpg",
+    "sizeKB": 347,
+    "width": 1536,
+    "height": 2048,
+    "luminance": 152,
+    "stdev": 63,
+    "castR": "1.04",
+    "castB": "0.95"
+  },
+  {
+    "file": "foto-28.jpg",
+    "sizeKB": 244,
+    "width": 1536,
+    "height": 2048,
+    "luminance": 117,
+    "stdev": 71,
+    "castR": "1.11",
+    "castB": "0.93"
+  },
+  {
+    "file": "foto-29.jpg",
+    "sizeKB": 175,
+    "width": 1536,
+    "height": 2048,
+    "luminance": 117,
+    "stdev": 72,
+    "castR": "1.10",
+    "castB": "0.93"
+  },
+  {
+    "file": "foto-30.jpg",
+    "sizeKB": 137,
+    "width": 1271,
+    "height": 2048,
+    "luminance": 127,
+    "stdev": 71,
+    "castR": "1.00",
+    "castB": "1.00"
+  },
+  {
+    "file": "foto-31.jpg",
+    "sizeKB": 230,
+    "width": 1383,
+    "height": 2048,
+    "luminance": 109,
+    "stdev": 65,
+    "castR": "1.16",
+    "castB": "0.93"
+  },
+  {
+    "file": "foto-32.jpg",
+    "sizeKB": 244,
+    "width": 1536,
+    "height": 2048,
+    "luminance": 117,
+    "stdev": 71,
+    "castR": "1.11",
+    "castB": "0.93"
+  },
+  {
+    "file": "foto-33.jpg",
+    "sizeKB": 136,
+    "width": 1536,
+    "height": 2048,
+    "luminance": 120,
+    "stdev": 72,
+    "castR": "1.00",
+    "castB": "1.00"
+  },
+  {
+    "file": "foto-34.jpg",
+    "sizeKB": 92,
+    "width": 1125,
+    "height": 786,
+    "luminance": 101,
+    "stdev": 66,
+    "castR": "0.85",
+    "castB": "1.10"
+  },
+  {
+    "file": "foto-35.jpg",
+    "sizeKB": 88,
+    "width": 1125,
+    "height": 794,
+    "luminance": 107,
+    "stdev": 76,
+    "castR": "1.07",
+    "castB": "0.92"
+  }
+]

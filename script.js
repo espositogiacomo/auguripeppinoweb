@@ -28,7 +28,7 @@ function parseAt(at) {
 function buildSteps() {
   TIMELINE.forEach((item) => {
     const img = document.createElement("img");
-    img.src = `photos/foto-${pad(item.photo)}.jpg`;
+    img.src = `${PHOTOS_DIR}/foto-${pad(item.photo)}.jpg`;
     img.alt = `Foto ${item.photo}`;
     img.className = "slide photo-slide";
 
@@ -136,7 +136,7 @@ function togglePause() {
       manualStart += Date.now() - pausedAt;
     }
     isPaused = false;
-    playPauseButton.textContent = "⏸";
+    playPauseButton.classList.remove("paused");
   } else {
     if (AUDIO_FILE) {
       audio.pause();
@@ -144,7 +144,7 @@ function togglePause() {
       pausedAt = Date.now();
     }
     isPaused = true;
-    playPauseButton.textContent = "▶";
+    playPauseButton.classList.add("paused");
   }
 }
 
@@ -155,7 +155,7 @@ function start() {
   if (SHOW_DEBUG_INFO) debugInfo.classList.remove("hidden");
 
   if (steps[0].text) updateCaption(steps[0]);
-  setTimeout(playConfetti, 400); // la prima slide e' quella iniziale
+  setTimeout(playConfetti, CONFETTI.initialDelayMs); // la prima slide e' quella iniziale
 
   if (AUDIO_FILE) {
     audio.src = AUDIO_FILE;
@@ -180,18 +180,29 @@ function start() {
 let confettiPlayed = false;
 
 function playConfetti() {
-  if (confettiPlayed || typeof confetti !== "function") return;
+  if (confettiPlayed || !CONFETTI.enabled || typeof confetti !== "function") return;
   confettiPlayed = true;
 
+  const shared = {
+    particleCount: CONFETTI.particleCount,
+    spread: CONFETTI.spread,
+    startVelocity: CONFETTI.startVelocity,
+    gravity: CONFETTI.gravity,
+    decay: CONFETTI.decay,
+    ticks: CONFETTI.ticks,
+    scalar: CONFETTI.scalar,
+    colors: CONFETTI.colors,
+    disableForReducedMotion: true,
+  };
+
   const burst = () => {
-    const shared = { particleCount: 30, spread: 70, startVelocity: 45, disableForReducedMotion: true };
     confetti({ ...shared, angle: 60, origin: { x: 0, y: 1 } });   // angolo in basso a sinistra, verso l'alto/destra
     confetti({ ...shared, angle: 120, origin: { x: 1, y: 1 } });  // angolo in basso a destra, verso l'alto/sinistra
   };
 
-  burst();
-  setTimeout(burst, 250);
-  setTimeout(burst, 500);
+  for (let i = 0; i < CONFETTI.burstCount; i++) {
+    setTimeout(burst, i * CONFETTI.burstDelayMs);
+  }
 }
 
 buildSteps();
