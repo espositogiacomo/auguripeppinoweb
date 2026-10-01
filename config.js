@@ -61,7 +61,7 @@ const TIMELINE = [
   { photo: 35, at: "2.09", text: "" },
   { photo: 24, at: "2.13", text: "E ho capito la timida follia Del tuo essere unico perché " },
   { photo: 26, at: "2.21", text: "Sei la meta del mio viaggio per me E così .... Sempre di più " },
-  { photo: 28, at: "2.34", text: "Somiglio a te Nei tuoi sorrisi E nelle lacrime"},
+  { photo: 28, at: "2.34", text: "Somiglio a te Nei tuoi sorrisi E nelle lacrime (la mela...)"},
   { photo: 27, at: "2.52", text: "E ho imparato ad amare e credere Nella vita rischiando tutta me " },
   { photo: 42, at: "3.05", text: "E ho diviso questo viaggio con te Io con te"},
   { photo: 48, at: "3.10", text: "" },
@@ -69,7 +69,8 @@ const TIMELINE = [
   { photo: 50, at: "3.20", text: "" },
   { photo: 33, at: "3.25", text: "" },
   { photo: 52, at: "3.30", text: "" },
-  { photo: 31,  at: "3.35", text: "Ti voglio bene Papà!"}
+  { photo: 54, at: "3.35", text: "" },
+  { photo: 31, at: "3.40", text: "Ti voglio bene Papà!"}
 ];
 
 // Percorso del file mp3 in audio/. Lascialo vuoto ("") per provare
@@ -82,7 +83,7 @@ const AUDIO_FILE = "audio/viaggio-con-te-delia.mp3";
 // aggiornato in tempo reale insieme alla progress bar. Utile solo in
 // fase di messa a punto della TIMELINE: metti a "false" per nasconderlo
 // quando la sincronizzazione e' definitiva.
-const SHOW_DEBUG_INFO = true;
+const SHOW_DEBUG_INFO = false;
 
 // Cartella da cui vengono caricate le foto. Le versioni in "photos/optimized"
 // sono corrette globalmente (esposizione, contrasto, bilanciamento del
