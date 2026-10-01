@@ -75,7 +75,7 @@ const TIMELINE = [
 // Percorso del file mp3 in audio/. Lascialo vuoto ("") per provare
 // lo slideshow senza audio (in quel caso il loop dura fino all'ultimo
 // "at" + qualche secondo, poi ricomincia).
-const AUDIO_FILE = "audio/viaggio-con-te.mp3";
+const AUDIO_FILE = "audio/viaggio-con-te-delia.mp3";
 
 // Aiuto visuale per sincronizzare foto e testi: mostra vicino al tasto
 // pausa il numero della foto corrente e il tempo trascorso (mm:ss),
