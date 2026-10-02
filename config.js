@@ -94,7 +94,7 @@ const CAPTION_BOX = {
 // aggiornato in tempo reale insieme alla progress bar. Utile solo in
 // fase di messa a punto della TIMELINE: metti a "false" per nasconderlo
 // quando la sincronizzazione e' definitiva.
-const SHOW_DEBUG_INFO = true;
+const SHOW_DEBUG_INFO = false;
 
 // Cartella da cui vengono caricate le foto. Le versioni in "photos/optimized"
 // sono corrette globalmente (esposizione, contrasto, bilanciamento del
