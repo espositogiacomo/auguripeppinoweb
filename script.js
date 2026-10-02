@@ -197,6 +197,10 @@ function start() {
   if (SHOW_DEBUG_INFO) debugInfo.classList.remove("hidden");
 
   document.documentElement.style.setProperty("--caption-font-size", CAPTION_FONT_SIZE);
+  const captionMargin = (100 - CAPTION_BOX.widthPct) / 2;
+  document.documentElement.style.setProperty("--caption-left", captionMargin + "%");
+  document.documentElement.style.setProperty("--caption-right", captionMargin + "%");
+  document.documentElement.style.setProperty("--caption-bottom", CAPTION_BOX.bottomPx + "px");
 
   document.addEventListener("pointerdown", (e) => {
     if (e.target.closest("#play-pause-button")) return;

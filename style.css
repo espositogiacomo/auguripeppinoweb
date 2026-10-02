@@ -113,9 +113,9 @@ html, body {
 /* Didascalia sotto la foto, con animazione "a fumo" */
 #caption {
   position: fixed;
-  left: 2.5%;
-  right: 2.5%;
-  bottom: 78px;
+  left: var(--caption-left, 2.5%);
+  right: var(--caption-right, 2.5%);
+  bottom: var(--caption-bottom, 78px);
   z-index: 5;
   padding: 0.55em 1.1em;
   border-radius: 14px;

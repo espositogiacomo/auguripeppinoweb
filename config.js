@@ -83,6 +83,12 @@ const AUDIO_FILE = "audio/viaggio-con-te-delia.mp3";
 // Dimensione del testo delle didascalie (es. "1.15rem", "18px").
 const CAPTION_FONT_SIZE = "1.50rem";
 
+// Posizione e larghezza del box delle didascalie.
+const CAPTION_BOX = {
+  widthPct: 95, // larghezza in % dello schermo (es. 95 = occupa il 95% della larghezza)
+  bottomPx: 78, // distanza dal bordo inferiore in pixel
+};
+
 // Aiuto visuale per sincronizzare foto e testi: mostra vicino al tasto
 // pausa il numero della foto corrente e il tempo trascorso (mm:ss),
 // aggiornato in tempo reale insieme alla progress bar. Utile solo in
