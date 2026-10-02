@@ -40,7 +40,7 @@ const TIMELINE = [
   { photo: 4,  at: "0.32", text: "Ma la vita l'hai insegnata tu" },
   { photo: 5,  at: "0.37", text: "Ogni giorno un po' di più" },
   { photo: 7,  at: "0.40", text: "Con quegli occhi innamorati tuoi" },
-  { photo: 8,  at: "0.44", text: "Di due figlie matte come noi" },
+  { photo: 8,  at: "0.43", text: "Di due figlie matte come noi" },
   { photo: 45,  at: "0.46", text: "" },
   { photo: 44,  at: "0.48", text: "Cosa non darei" },
   { photo: 10, at: "0.55", text: "perché il tempo Non ci invecchi mai" },
@@ -51,7 +51,7 @@ const TIMELINE = [
   { photo: 16, at: "1.13", text: "" },
   { photo: 17, at: "1.15", text: "E ho diviso la strada e l'allegria" },
   { photo: 19, at: "1.20", text: "La tua forza la tua malinconia" },
-  { photo: 29, at: "1.22", text: "" },
+  { photo: 29, at: "1.23", text: "" },
   { photo: 15, at: "1.30", text: "" },
   { photo: 51, at: "1.40", text: ""},  
   { photo: 20, at: "1.48", text: "Cosa non farei per ridarti il tempo perso ormai" },
@@ -85,8 +85,8 @@ const CAPTION_FONT_SIZE = "1.50rem";
 
 // Effetto zoom sulla didascalia: compare ingrandita e si restringe lentamente.
 const CAPTION_ZOOM = {
-  scale: 1.25,           // ingrandimento al comparire (1.25 = 25% più grande del normale)
-  shrinkDurationMs: 3000, // millisecondi per tornare alla dimensione normale
+  scale: 1.20,           // ingrandimento al comparire (1.25 = 25% più grande del normale)
+  shrinkDurationMs: 3500, // millisecondi per tornare alla dimensione normale
 };
 
 // Aiuto visuale per sincronizzare foto e testi: mostra vicino al tasto
@@ -94,7 +94,7 @@ const CAPTION_ZOOM = {
 // aggiornato in tempo reale insieme alla progress bar. Utile solo in
 // fase di messa a punto della TIMELINE: metti a "false" per nasconderlo
 // quando la sincronizzazione e' definitiva.
-const SHOW_DEBUG_INFO = false;
+const SHOW_DEBUG_INFO = true;
 
 // Cartella da cui vengono caricate le foto. Le versioni in "photos/optimized"
 // sono corrette globalmente (esposizione, contrasto, bilanciamento del
