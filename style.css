@@ -40,6 +40,10 @@ html, body {
   background: #000;
 }
 
+#slideshow img.photo-slide.landscape {
+  object-position: center 25%;
+}
+
 /* Confronto affiancato originale/ottimizzata (SHOW_COMPARISON) */
 #slideshow .compare-slide {
   display: flex;

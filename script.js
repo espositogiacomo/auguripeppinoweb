@@ -56,6 +56,9 @@ function buildSteps() {
       el.src = `${PHOTOS_DIR}/foto-${pad(item.photo)}.jpg`;
       el.alt = `Foto ${item.photo}`;
       el.className = "slide photo-slide";
+      el.addEventListener("load", () => {
+        if (el.naturalWidth > el.naturalHeight) el.classList.add("landscape");
+      }, { once: true });
     }
 
     slideshow.appendChild(el);
