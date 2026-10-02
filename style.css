@@ -140,12 +140,12 @@ html, body {
 
 @keyframes captionAppear {
   0%   { opacity: 0; filter: blur(16px); transform: translateX(-50%) scale(0.8); }
-  60%  { opacity: 1; filter: blur(2px);  transform: translateX(-50%) scale(1.13); }
-  100% { opacity: 1; filter: blur(0);    transform: translateX(-50%) scale(var(--caption-zoom-scale, 1.1)); }
+  60%  { opacity: 1; filter: blur(2px);  transform: translateX(-50%) scale(calc(var(--caption-zoom-scale, 1.25) + 0.03)); }
+  100% { opacity: 1; filter: blur(0);    transform: translateX(-50%) scale(var(--caption-zoom-scale, 1.25)); }
 }
 
 @keyframes captionShrink {
-  from { transform: translateX(-50%) scale(var(--caption-zoom-scale, 1.1)); }
+  from { transform: translateX(-50%) scale(var(--caption-zoom-scale, 1.25)); }
   to   { transform: translateX(-50%) scale(1); }
 }
 

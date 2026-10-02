@@ -61,7 +61,7 @@ const TIMELINE = [
   { photo: 35, at: "2.09", text: "" },
   { photo: 24, at: "2.13", text: "E ho capito la timida follia Del tuo essere unico perché " },
   { photo: 26, at: "2.21", text: "Sei la meta del mio viaggio per me E così .... Sempre di più " },
-  { photo: 28, at: "2.34", text: "Somiglio a te Nei tuoi sorrisi E nelle lacrime (la mela...)"},
+  { photo: 28, at: "2.34", text: "Somiglio a te Nei tuoi sorrisi E nelle lacrime"},
   { photo: 27, at: "2.52", text: "E ho imparato ad amare e credere Nella vita rischiando tutta me " },
   { photo: 42, at: "3.05", text: "E ho diviso questo viaggio con te Io con te"},
   { photo: 48, at: "3.09", text: "" },
@@ -81,11 +81,11 @@ const TIMELINE = [
 const AUDIO_FILE = "audio/viaggio-con-te-delia.mp3";
 
 // Dimensione del testo delle didascalie (es. "1.15rem", "18px").
-const CAPTION_FONT_SIZE = "1.38rem";
+const CAPTION_FONT_SIZE = "1.66rem";
 
 // Effetto zoom sulla didascalia: compare ingrandita e si restringe lentamente.
 const CAPTION_ZOOM = {
-  scale: 1.1,            // ingrandimento al comparire (1.1 = 10% più grande del normale)
+  scale: 1.25,           // ingrandimento al comparire (1.25 = 25% più grande del normale)
   shrinkDurationMs: 3000, // millisecondi per tornare alla dimensione normale
 };
 

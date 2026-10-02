@@ -68,7 +68,7 @@ function updateCaption(step) {
   if (step.text) {
     caption.textContent = step.text;
     caption.classList.remove("hiding");
-    // forza il replay dell'animazione anche se il testo e' rimasto uguale
+    caption.classList.remove("visible");
     void caption.offsetWidth;
     caption.classList.add("visible");
   } else if (caption.classList.contains("visible")) {
