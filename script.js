@@ -95,7 +95,7 @@ function loopDuration() {
 function currentTime() {
   if (AUDIO_FILE) return audio.currentTime;
   if (isPaused) return (pausedAt - manualStart) / 1000;
-  return ((Date.now() - manualStart) / 1000) % loopDuration();
+  return Math.min((Date.now() - manualStart) / 1000, loopDuration());
 }
 
 function tick() {
