@@ -85,7 +85,7 @@ const CAPTION_FONT_SIZE = "1.50rem";
 
 // Posizione e larghezza del box delle didascalie.
 const CAPTION_BOX = {
-  widthPct: 95, // larghezza in % dello schermo (es. 95 = occupa il 95% della larghezza)
+  widthPct: 90, // larghezza in % dello schermo (es. 95 = occupa il 95% della larghezza)
   bottomPx: 78, // distanza dal bordo inferiore in pixel
 };
 
@@ -94,7 +94,7 @@ const CAPTION_BOX = {
 // aggiornato in tempo reale insieme alla progress bar. Utile solo in
 // fase di messa a punto della TIMELINE: metti a "false" per nasconderlo
 // quando la sincronizzazione e' definitiva.
-const SHOW_DEBUG_INFO = true;
+const SHOW_DEBUG_INFO = false;
 
 // Cartella da cui vengono caricate le foto. Le versioni in "photos/optimized"
 // sono corrette globalmente (esposizione, contrasto, bilanciamento del
