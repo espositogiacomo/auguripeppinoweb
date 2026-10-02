@@ -51,7 +51,7 @@ const TIMELINE = [
   { photo: 16, at: "1.13", text: "" },
   { photo: 17, at: "1.15", text: "E ho diviso la strada e l'allegria" },
   { photo: 19, at: "1.20", text: "La tua forza la tua malinconia" },
-  { photo: 29, at: "1.22", text: "" },
+  { photo: 29, at: "1.23", text: "" },
   { photo: 15, at: "1.30", text: "" },
   { photo: 51, at: "1.40", text: ""},  
   { photo: 20, at: "1.48", text: "Cosa non farei per ridarti il tempo perso ormai" },
