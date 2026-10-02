@@ -114,9 +114,9 @@ html, body {
 #caption {
   position: fixed;
   left: 50%;
-  bottom: 98px;
+  bottom: 78px;
   z-index: 5;
-  max-width: 88%;
+  max-width: 95%;
   padding: 0.55em 1.1em;
   border-radius: 14px;
   background: rgba(0, 0, 0, 0.55);

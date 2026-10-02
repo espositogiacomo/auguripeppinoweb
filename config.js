@@ -81,7 +81,7 @@ const TIMELINE = [
 const AUDIO_FILE = "audio/viaggio-con-te-delia.mp3";
 
 // Dimensione del testo delle didascalie (es. "1.15rem", "18px").
-const CAPTION_FONT_SIZE = "1.66rem";
+const CAPTION_FONT_SIZE = "1.50rem";
 
 // Effetto zoom sulla didascalia: compare ingrandita e si restringe lentamente.
 const CAPTION_ZOOM = {
