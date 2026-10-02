@@ -126,12 +126,16 @@ function tick() {
 let isScrubbing = false;
 let hideButtonTimer = null;
 
-function showButtonTemporarily() {
+function showControlsTemporarily() {
   if (isPaused) return;
   playPauseButton.classList.remove("hidden");
+  progressBar.classList.remove("hidden");
   clearTimeout(hideButtonTimer);
   hideButtonTimer = setTimeout(() => {
-    if (!isPaused) playPauseButton.classList.add("hidden");
+    if (!isPaused) {
+      playPauseButton.classList.add("hidden");
+      progressBar.classList.add("hidden");
+    }
   }, 5000);
 }
 
@@ -173,7 +177,7 @@ function togglePause() {
     }
     isPaused = false;
     playPauseButton.classList.remove("paused");
-    showButtonTemporarily();
+    showControlsTemporarily();
   } else {
     if (AUDIO_FILE) {
       audio.pause();
@@ -183,20 +187,20 @@ function togglePause() {
     isPaused = true;
     clearTimeout(hideButtonTimer);
     playPauseButton.classList.remove("hidden");
+    progressBar.classList.remove("hidden");
     playPauseButton.classList.add("paused");
   }
 }
 
 function start() {
   overlay.classList.add("hidden");
-  progressBar.classList.remove("hidden");
   if (SHOW_DEBUG_INFO) debugInfo.classList.remove("hidden");
 
   document.documentElement.style.setProperty("--caption-font-size", CAPTION_FONT_SIZE);
 
   document.addEventListener("pointerdown", (e) => {
     if (e.target.closest("#play-pause-button")) return;
-    showButtonTemporarily();
+    showControlsTemporarily();
   }, { passive: true });
 
   if (steps[0].text) updateCaption(steps[0]);
