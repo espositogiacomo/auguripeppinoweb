@@ -130,8 +130,7 @@ html, body {
 }
 
 #caption.visible {
-  animation: captionAppear 900ms ease-out forwards,
-             captionShrink var(--caption-shrink-duration, 3s) 900ms ease-in-out forwards;
+  animation: captionAppear 800ms ease-out forwards;
 }
 
 #caption.hiding {
@@ -139,19 +138,13 @@ html, body {
 }
 
 @keyframes captionAppear {
-  0%   { opacity: 0; filter: blur(16px); transform: scale(0.8); }
-  60%  { opacity: 1; filter: blur(2px);  transform: scale(calc(var(--caption-zoom-scale, 1.25) + 0.03)); }
-  100% { opacity: 1; filter: blur(0);    transform: scale(var(--caption-zoom-scale, 1.25)); }
-}
-
-@keyframes captionShrink {
-  from { transform: scale(var(--caption-zoom-scale, 1.25)); }
-  to   { transform: scale(1); }
+  0%   { opacity: 0; filter: blur(8px); }
+  100% { opacity: 1; filter: blur(0); }
 }
 
 @keyframes captionDisappear {
-  0%   { opacity: 1; filter: blur(0);    transform: scale(1) translateY(0); }
-  100% { opacity: 0; filter: blur(16px); transform: scale(1.15) translateY(-14px); }
+  0%   { opacity: 1; filter: blur(0); }
+  100% { opacity: 0; filter: blur(8px); }
 }
 
 /* Tasto play/pausa */

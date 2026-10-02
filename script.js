@@ -197,8 +197,6 @@ function start() {
   if (SHOW_DEBUG_INFO) debugInfo.classList.remove("hidden");
 
   document.documentElement.style.setProperty("--caption-font-size", CAPTION_FONT_SIZE);
-  document.documentElement.style.setProperty("--caption-zoom-scale", CAPTION_ZOOM.scale);
-  document.documentElement.style.setProperty("--caption-shrink-duration", CAPTION_ZOOM.shrinkDurationMs + "ms");
 
   document.addEventListener("pointerdown", (e) => {
     if (e.target.closest("#play-pause-button")) return;
