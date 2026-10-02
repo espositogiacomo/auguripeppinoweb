@@ -113,10 +113,10 @@ html, body {
 /* Didascalia sotto la foto, con animazione "a fumo" */
 #caption {
   position: fixed;
-  left: 50%;
+  left: 2.5%;
+  right: 2.5%;
   bottom: 78px;
   z-index: 5;
-  max-width: 95%;
   padding: 0.55em 1.1em;
   border-radius: 14px;
   background: rgba(0, 0, 0, 0.55);
@@ -139,19 +139,19 @@ html, body {
 }
 
 @keyframes captionAppear {
-  0%   { opacity: 0; filter: blur(16px); transform: translateX(-50%) scale(0.8); }
-  60%  { opacity: 1; filter: blur(2px);  transform: translateX(-50%) scale(calc(var(--caption-zoom-scale, 1.25) + 0.03)); }
-  100% { opacity: 1; filter: blur(0);    transform: translateX(-50%) scale(var(--caption-zoom-scale, 1.25)); }
+  0%   { opacity: 0; filter: blur(16px); transform: scale(0.8); }
+  60%  { opacity: 1; filter: blur(2px);  transform: scale(calc(var(--caption-zoom-scale, 1.25) + 0.03)); }
+  100% { opacity: 1; filter: blur(0);    transform: scale(var(--caption-zoom-scale, 1.25)); }
 }
 
 @keyframes captionShrink {
-  from { transform: translateX(-50%) scale(var(--caption-zoom-scale, 1.25)); }
-  to   { transform: translateX(-50%) scale(1); }
+  from { transform: scale(var(--caption-zoom-scale, 1.25)); }
+  to   { transform: scale(1); }
 }
 
 @keyframes captionDisappear {
-  0%   { opacity: 1; filter: blur(0);    transform: translateX(-50%) scale(1)    translateY(0); }
-  100% { opacity: 0; filter: blur(16px); transform: translateX(-50%) scale(1.15) translateY(-14px); }
+  0%   { opacity: 1; filter: blur(0);    transform: scale(1) translateY(0); }
+  100% { opacity: 0; filter: blur(16px); transform: scale(1.15) translateY(-14px); }
 }
 
 /* Tasto play/pausa */
