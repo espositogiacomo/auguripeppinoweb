@@ -83,6 +83,12 @@ const AUDIO_FILE = "audio/viaggio-con-te-delia.mp3";
 // Dimensione del testo delle didascalie (es. "1.15rem", "18px").
 const CAPTION_FONT_SIZE = "1.38rem";
 
+// Effetto zoom sulla didascalia: compare ingrandita e si restringe lentamente.
+const CAPTION_ZOOM = {
+  scale: 1.1,            // ingrandimento al comparire (1.1 = 10% più grande del normale)
+  shrinkDurationMs: 3000, // millisecondi per tornare alla dimensione normale
+};
+
 // Aiuto visuale per sincronizzare foto e testi: mostra vicino al tasto
 // pausa il numero della foto corrente e il tempo trascorso (mm:ss),
 // aggiornato in tempo reale insieme alla progress bar. Utile solo in
