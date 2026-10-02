@@ -85,7 +85,7 @@ const CAPTION_FONT_SIZE = "1.50rem";
 
 // Posizione e larghezza del box delle didascalie.
 const CAPTION_BOX = {
-  widthPct: 95, // larghezza in % dello schermo (es. 95 = occupa il 95% della larghezza)
+  widthPct: 90, // larghezza in % dello schermo (es. 95 = occupa il 95% della larghezza)
   bottomPx: 78, // distanza dal bordo inferiore in pixel
 };
 
