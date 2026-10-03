@@ -69,15 +69,18 @@ const TIMELINE = [
   { photo: 27, at: "2.52", text: "E ho imparato ad amare e credere Nella vita rischiando tutta me " },
   { photo: 42, at: "3.05", text: "E ho diviso questo viaggio con te Io con te"},
   { photo: 57, at: "3.09", text: "" },
-  { photo: 48, at: "3.13", text: "" },
+  { photo: 48, at: "3.12", text: "" },
   { photo: 55, at: "3.15", text: "" },
-  { photo: 56, at: "3.19", text: "" },
-  { photo: 49, at: "3.22", text: "" },
-  { photo: 50, at: "3.25", text: "" },
-  { photo: 33, at: "3.28", text: "" },
-  { photo: 52, at: "3.32", text: "" },
-  { photo: 54, at: "3.36", text: "" },
-  { photo: 31, at: "3.40", text: "Ti voglio bene Papà!"}
+  { photo: 56, at: "3.18", text: "" },
+  { photo: 49, at: "3.21", text: "" },
+  { photo: 50, at: "3.24", text: "" },
+  { photo: 33, at: "3.27", text: "" },
+  { photo: 52, at: "3.30", text: "" },
+  { photo: 64, at: "3.33", text: "" },
+  { photo: 63, at: "3.36", text: "" },
+  { photo: 62, at: "3.38", text: "" },
+  { photo: 54, at: "3.40", text: "" },
+  { photo: 31, at: "3.42", text: "Ti voglio bene Papà!"}
 ];
 
 // Percorso del file mp3 in audio/. Lascialo vuoto ("") per provare
