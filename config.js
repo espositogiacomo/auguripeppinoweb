@@ -68,8 +68,8 @@ const TIMELINE = [
   { photo: 28, at: "2.34", text: "Somiglio a te Nei tuoi sorrisi E nelle lacrime"},
   { photo: 27, at: "2.52", text: "E ho imparato ad amare e credere Nella vita rischiando tutta me " },
   { photo: 42, at: "3.05", text: "E ho diviso questo viaggio con te Io con te"},
-  { photo: 57, at: "3.07", text: "" },
-  { photo: 48, at: "3.11", text: "" },
+  { photo: 57, at: "3.09", text: "" },
+  { photo: 48, at: "3.13", text: "" },
   { photo: 55, at: "3.15", text: "" },
   { photo: 56, at: "3.19", text: "" },
   { photo: 49, at: "3.22", text: "" },
@@ -99,7 +99,7 @@ const CAPTION_BOX = {
 // aggiornato in tempo reale insieme alla progress bar. Utile solo in
 // fase di messa a punto della TIMELINE: metti a "false" per nasconderlo
 // quando la sincronizzazione e' definitiva.
-const SHOW_DEBUG_INFO = false;
+const SHOW_DEBUG_INFO = true;
 
 // Cartella da cui vengono caricate le foto. Le versioni in "photos/optimized"
 // sono corrette globalmente (esposizione, contrasto, bilanciamento del
